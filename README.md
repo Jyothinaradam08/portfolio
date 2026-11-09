@@ -54,54 +54,7 @@ Portfolio/
 
 ---
 
-## 🌐 How to Deploy for Free (To get your LinkedIn Link)
 
-### Option A: GitHub Pages (Recommended — Permanent & Free)
-
-1. Sign in to your GitHub account: **[Jyothinaradam08](https://github.com/Jyothinaradam08)**.
-2. Click **New Repository** and name it `portfolio` (or `Jyothinaradam08.github.io`).
-3. Set the repository to **Public** and leave "Initialize this repository with a README" unchecked.
-4. In this folder (`c:\Jyo\Project\Portfolio`), run in PowerShell:
-   ```bash
-   git remote add origin https://github.com/Jyothinaradam08/portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-5. On your GitHub repository page:
-   - Go to **Settings** > **Pages** (on the left sidebar).
-   - Under **Build and deployment** > **Branch**, select `main` and `/(root)`.
-   - Click **Save**.
-6. Within 1–2 minutes, your website is live at:
-   `https://jyothinaradam08.github.io/portfolio/`
-
----
-
-### Option B: Vercel or Netlify (1-Click Drag & Drop)
-
-1. Go to [Netlify Drop](https://app.netlify.com/drop) or [Vercel](https://vercel.com/).
-2. Drag and drop the `Portfolio` folder directly onto the page.
-3. Your site is deployed instantly with a live URL (e.g. `https://jyothi-portfolio.netlify.app`).
-
----
-
-## 💼 How to Add to Your LinkedIn Profile
-
-### 1. Add as Custom Link in Profile Intro (Top of Profile)
-1. Go to your LinkedIn profile: **[naradam-jyothi-lakshmi](https://www.linkedin.com/in/naradam-jyothi-lakshmi/)**
-2. Click the **Edit (Pencil)** icon on your top introduction card.
-3. Scroll down to the bottom to **Custom link**.
-4. In **Link URL**, paste your live portfolio URL (`https://jyothinaradam08.github.io/portfolio/`).
-5. In **Link text**, paste:
-   ```text
-   👉 View AI & Full-Stack Portfolio (NIT Raipur)
-   ```
-6. Click **Save**.
-
----
-
-### 2. Add to the "Featured" Section (Visual Showcase)
-1. On your LinkedIn profile, click **Add profile section** > **Recommended** > **Add Featured**.
-2. Click the **+** button > **Add a link**.
 3. Paste your portfolio link.
 4. Enter:
    - **Title**: `Interactive AI & Full-Stack Portfolio | Jyothi Lakshmi Naradam`
@@ -133,9 +86,6 @@ I am actively seeking software engineering, machine learning, and AI internship 
 
 ---
 
-## ✏️ How to Customize Further
 
-All portfolio content is neatly organized in [js/projects-data.js](file:///c:/Jyo/Project/Portfolio/js/projects-data.js):
-- Change your LinkedIn or GitHub profile link by updating the `linkedin` or `github` URLs in `personal`.
 - Add new projects or update existing ones by editing the `projects` array.
 - Add or modify skills in the `skills.categories` array.
