@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.98" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="75" x2="800" y2="75" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+    <line x1="160" y1="0" x2="160" y2="450" />
+    <line x1="320" y1="0" x2="320" y2="450" />
+    <line x1="480" y1="0" x2="480" y2="450" />
+    <line x1="640" y1="0" x2="640" y2="450" />
+  </g>
+
+  <!-- Main Mockup Container -->
+  <g transform="translate(60, 40)" filter="url(#shadow)">
+    <!-- Browser/App Window Card -->
+    <rect width="680" height="370" rx="16" fill="url(#cardGrad)" stroke="#e2e8f0" stroke-width="1.5" />
+    
+    <!-- Window Header -->
+    <rect width="680" height="46" rx="16" fill="#f1f5f9" />
+    <rect y="32" width="680" height="14" fill="#f1f5f9" />
+    <circle cx="24" cy="23" r="6" fill="#f43f5e" />
+    <circle cx="44" cy="23" r="6" fill="#fbbf24" />
+    <circle cx="64" cy="23" r="6" fill="#10b981" />
+    
+    <!-- Title Pill -->
+    <rect x="230" y="12" width="220" height="22" rx="11" fill="#e2e8f0" />
+    <text x="340" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">verisense-ai.platform/verify</text>
+
+    <!-- Top App Banner inside Mockup -->
+    <g transform="translate(30, 65)">
+      <!-- App Name & Badges -->
+      <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#0f172a">VeriSense AI</text>
+      <text x="135" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#0284c7">Multilingual Misinformation Detection</text>
+      
+      <!-- Modality Pills -->
+      <g transform="translate(420, 5)">
+        <rect x="0" y="0" width="62" height="22" rx="6" fill="#e0f2fe" stroke="#bae6fd" />
+        <text x="31" y="15" font-family="sans-serif" font-size="10" font-weight="700" fill="#0369a1" text-anchor="middle">TEXT</text>
+        
+        <rect x="70" y="0" width="62" height="22" rx="6" fill="#e0f2fe" stroke="#bae6fd" />
+        <text x="101" y="15" font-family="sans-serif" font-size="10" font-weight="700" fill="#0369a1" text-anchor="middle">AUDIO</text>
+
+        <rect x="140" y="0" width="62" height="22" rx="6" fill="#e0f2fe" stroke="#bae6fd" />
+        <text x="171" y="15" font-family="sans-serif" font-size="10" font-weight="700" fill="#0369a1" text-anchor="middle">VIDEO</text>
+      </g>
+    </g>
+
+    <!-- Content Columns -->
+    <!-- Left: Transcription & Input Section -->
+    <g transform="translate(30, 115)">
+      <rect width="360" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+      <rect width="360" height="34" rx="10" fill="#f8fafc" />
+      <rect y="24" width="360" height="10" fill="#f8fafc" />
+      <text x="16" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#334155">SPEECH &amp; TEXT INGESTION PIPELINE</text>
+      
+      <!-- Audio Waveform Graphic -->
+      <g transform="translate(16, 50)">
+        <rect width="328" height="38" rx="6" fill="#f0f9ff" stroke="#e0f2fe" />
+        <path d="M 12 19 L 24 9 L 36 29 L 48 14 L 60 24 L 72 7 L 84 31 L 96 16 L 108 26 L 120 12 L 132 28 L 144 8 L 156 24 L 168 18 L 180 30 L 192 14 L 204 22 L 216 10 L 228 26 L 240 14 L 252 24 L 264 12 L 276 22 L 288 16 L 300 24 L 312 18" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+
+      <!-- Language Badges -->
+      <g transform="translate(16, 104)">
+        <text x="0" y="12" font-family="sans-serif" font-size="10" font-weight="600" fill="#64748b">Detected Language:</text>
+        <rect x="110" y="0" width="60" height="18" rx="4" fill="#f1f5f9" />
+        <text x="140" y="13" font-family="sans-serif" font-size="10" font-weight="700" fill="#0f172a" text-anchor="middle">English</text>
+
+        <rect x="178" y="0" width="55" height="18" rx="4" fill="#f1f5f9" />
+        <text x="205" y="13" font-family="sans-serif" font-size="10" font-weight="700" fill="#0f172a" text-anchor="middle">Hindi</text>
+
+        <rect x="240" y="0" width="55" height="18" rx="4" fill="#f1f5f9" />
+        <text x="267" y="13" font-family="sans-serif" font-size="10" font-weight="700" fill="#0f172a" text-anchor="middle">Telugu</text>
+      </g>
+
+      <!-- Extracted Text Mockup -->
+      <g transform="translate(16, 136)">
+        <rect width="328" height="66" rx="6" fill="#f8fafc" stroke="#e2e8f0" />
+        <text x="12" y="20" font-family="monospace" font-size="10" fill="#334155">[Whisper ASR Transcript Extracted]</text>
+        <text x="12" y="38" font-family="sans-serif" font-size="10" fill="#64748b">Evaluating multi-feature linguistic lexical cues...</text>
+        <text x="12" y="54" font-family="sans-serif" font-size="10" font-weight="600" fill="#0284c7">TF-IDF Vectorization • Calibrated Classifier</text>
+      </g>
+    </g>
+
+    <!-- Right: Explainable AI Verdict & Tech Stack -->
+    <g transform="translate(410, 115)">
+      <rect width="240" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+      <rect width="240" height="34" rx="10" fill="#f8fafc" />
+      <rect y="24" width="240" height="10" fill="#f8fafc" />
+      <text x="16" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#334155">VERIFICATION VERDICT</text>
+      
+      <!-- Verdict Display -->
+      <g transform="translate(16, 50)">
+        <rect width="208" height="54" rx="8" fill="#f0fdf4" stroke="#bbf7d0" />
+        <circle cx="28" cy="27" r="14" fill="#22c55e" />
+        <path d="M 23 27 L 27 31 L 34 23" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="52" y="24" font-family="sans-serif" font-size="12" font-weight="800" fill="#15803d">EXPLAINABLE VERDICT</text>
+        <text x="52" y="40" font-family="sans-serif" font-size="10" font-weight="600" fill="#166534">Authenticity Verified &amp; Scored</text>
+      </g>
+
+      <!-- Technology Chips inside Card -->
+      <g transform="translate(16, 122)">
+        <text x="0" y="10" font-family="sans-serif" font-size="10" font-weight="700" fill="#64748b">CORE ARCHITECTURE</text>
+        
+        <g transform="translate(0, 20)">
+          <rect x="0" y="0" width="98" height="22" rx="4" fill="#f1f5f9" />
+          <text x="49" y="15" font-family="sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">OpenAI Whisper</text>
+
+          <rect x="106" y="0" width="102" height="22" rx="4" fill="#f1f5f9" />
+          <text x="157" y="15" font-family="sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">FFmpeg Media</text>
+        </g>
+
+        <g transform="translate(0, 50)">
+          <rect x="0" y="0" width="98" height="22" rx="4" fill="#f1f5f9" />
+          <text x="49" y="15" font-family="sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Python Flask</text>
+
+          <rect x="106" y="0" width="102" height="22" rx="4" fill="#f1f5f9" />
+          <text x="157" y="15" font-family="sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">React &amp; Node.js</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>

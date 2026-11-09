@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jyothi Lakshmi Naradam | AI/ML Engineer & Full-Stack Developer</title>
+  <title>Jyothi Lakshmi Naradam | AI/ML Engineer | NLP & Multimodal AI | Full-Stack Developer</title>
   
   <!-- SEO & LinkedIn Open Graph Meta Tags -->
-  <meta name="description" content="Portfolio of Jyothi Lakshmi Naradam. M.Tech IT scholar at NIT Raipur (8.87 CGPA). Specialized in Artificial Intelligence, Multimodal Machine Learning, NLP, and Full-Stack Web Development.">
+  <meta name="description" content="Portfolio of Jyothi Lakshmi Naradam. M.Tech IT scholar at NIT Raipur (8.87 CGPA). Specialized in Artificial Intelligence, Multimodal Machine Learning, NLP, and Full-Stack Development.">
   <meta name="author" content="Jyothi Lakshmi Naradam">
-  <meta name="keywords" content="Jyothi Lakshmi Naradam, NIT Raipur, AI Engineer, Machine Learning, NLP, Whisper, React.js, Full Stack Developer, Python, Portfolio, LinkedIn">
+  <meta name="keywords" content="Jyothi Lakshmi Naradam, NIT Raipur, AI Engineer, Machine Learning, NLP, Whisper, React.js, Full Stack Developer, Python, Deep Learning, Portfolio, LinkedIn">
   
   <!-- Open Graph / LinkedIn Sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jyothinaradam08.github.io/portfolio/">
-  <meta property="og:title" content="Jyothi Lakshmi Naradam | AI & Machine Learning Engineer">
-  <meta property="og:description" content="M.Tech IT Scholar @ NIT Raipur (8.87 CGPA) | Multimodal AI, NLP, Speech-to-Text & Scalable Full-Stack Engineering.">
+  <meta property="og:url" content="https://lambent-sunshine-797e41.netlify.app/">
+  <meta property="og:title" content="Jyothi Lakshmi Naradam | AI/ML Engineer | NLP & Multimodal AI">
+  <meta property="og:description" content="M.Tech IT Scholar @ NIT Raipur (8.87 CGPA) | Multimodal AI, NLP, Speech Recognition & Scalable Full-Stack Engineering.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&h=630&q=80">
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jyothi Lakshmi Naradam | Portfolio">
-  <meta name="twitter:description" content="AI & Machine Learning Engineer | M.Tech IT @ NIT Raipur.">
+  <meta name="twitter:title" content="Jyothi Lakshmi Naradam | AI/ML Engineer Portfolio">
+  <meta name="twitter:description" content="AI/ML Engineer & Full-Stack Developer | M.Tech IT @ NIT Raipur (8.87 CGPA).">
 
   <!-- Google Fonts: Inter & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,9 +87,10 @@
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
         <a href="#about" class="nav-link hover:text-sky-600 transition">About</a>
         <a href="#education" class="nav-link hover:text-sky-600 transition">Education</a>
+        <a href="#research" class="nav-link hover:text-sky-600 transition">Research</a>
         <a href="#skills" class="nav-link hover:text-sky-600 transition">Skills</a>
         <a href="#projects" class="nav-link hover:text-sky-600 transition">Projects</a>
         <a href="#resume" class="nav-link hover:text-sky-600 transition">Resume</a>
@@ -107,7 +108,15 @@
           </span>
         </button>
 
-        <!-- Get In Touch CTA -->
+        <!-- Download Resume Header CTA -->
+        <a href="assets/Jyothi_Lakshmi_Naradam_Resume.pdf" download="Jyothi_Lakshmi_Naradam_Resume.pdf" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-semibold text-xs transition shadow-sm">
+          <svg class="w-3.5 h-3.5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Let's Talk CTA -->
         <a href="#contact" class="hidden lg:inline-flex items-center gap-2 px-4 py-2 rounded-xl btn-skyblue text-xs tracking-wide shadow-md transition">
           <span>Let's Talk</span>
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,7 +125,7 @@
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-xl bg-slate-100 border border-slate-200 text-slate-700">
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-xl bg-slate-100 border border-slate-200 text-slate-700" aria-label="Toggle Navigation Menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -129,6 +138,7 @@
     <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-5 space-y-2 border-t border-slate-200 bg-white/95 backdrop-blur-xl">
       <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-700 hover:bg-sky-50">About</a>
       <a href="#education" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-700 hover:bg-sky-50">Education</a>
+      <a href="#research" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-700 hover:bg-sky-50">Research</a>
       <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-700 hover:bg-sky-50">Skills</a>
       <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-700 hover:bg-sky-50">Projects</a>
       <a href="#resume" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-700 hover:bg-sky-50">Resume</a>
@@ -139,7 +149,7 @@
   <!-- ==========================================================================
        HERO SECTION
        ========================================================================== -->
-  <section id="hero" class="relative pt-12 sm:pt-20 pb-16 sm:pb-24 overflow-hidden">
+  <section id="hero" class="relative pt-10 sm:pt-16 pb-16 sm:pb-24 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -147,65 +157,84 @@
         <!-- Left Column: Intro & Actions -->
         <div class="lg:col-span-7 space-y-6">
           
-          <!-- Opportunity Pill -->
+          <!-- Opportunity Status Pill -->
           <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold">
             <span class="status-pulse"></span>
             <span>Open to AI/ML & Software Engineering Roles</span>
           </div>
 
-          <!-- Main Heading -->
+          <!-- Main Heading & Professional Headline -->
           <div class="space-y-2">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-heading leading-tight text-slate-900">
               Hi, I'm <span class="text-gradient">Jyothi Lakshmi</span>
             </h1>
             
-            <div class="text-lg sm:text-2xl font-bold text-slate-700 h-9 flex items-center">
+            <h2 class="text-lg sm:text-2xl font-bold text-slate-800 tracking-tight">
+              AI/ML Engineer | NLP &amp; Multimodal AI | Full-Stack Developer
+            </h2>
+
+            <div class="text-sm sm:text-base font-semibold text-slate-600 h-8 flex items-center">
               <span id="typewriter-text" class="text-sky-600 font-mono"></span>
-              <span class="typewriter-cursor h-6"></span>
+              <span class="typewriter-cursor h-5"></span>
             </div>
           </div>
 
-          <!-- Bio / Objective -->
+          <!-- Professional Description -->
           <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
-            M.Tech Information Technology student at <strong class="text-slate-900 font-semibold">NIT Raipur</strong> with a strong foundation in <strong class="text-slate-900 font-semibold">Artificial Intelligence, Machine Learning, Data Analytics, and Full-Stack Web Development</strong>. Passionate about applying technical problem-solving skills to build intelligent, data-driven, and scalable systems.
+            M.Tech IT student at <strong class="text-slate-900 font-semibold">NIT Raipur</strong>, passionate about building intelligent applications using Machine Learning, Deep Learning, Natural Language Processing, and modern web technologies.
           </p>
+
+          <!-- Key Credentials Badge Pill -->
+          <div class="flex flex-wrap items-center gap-3 text-xs">
+            <div class="px-3 py-1.5 rounded-lg bg-sky-50 border border-sky-200 text-sky-800 font-semibold flex items-center gap-2">
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              <span>NIT Raipur – M.Tech Information Technology</span>
+            </div>
+            <div class="px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 font-bold">
+              CGPA: 8.87 / 10
+            </div>
+          </div>
 
           <!-- Action Buttons -->
           <div class="flex flex-wrap items-center gap-3.5 pt-2">
-            <a href="#projects" class="btn-skyblue inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm transition">
-              <span>View Projects</span>
+            <!-- Download Resume Button -->
+            <a href="assets/Jyothi_Lakshmi_Naradam_Resume.pdf" download="Jyothi_Lakshmi_Naradam_Resume.pdf" class="btn-skyblue inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm transition">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <!-- Explore Projects Button -->
+            <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-semibold text-sm transition transform hover:-translate-y-0.5 shadow-sm">
+              <span>Explore Projects</span>
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </a>
 
-            <button id="view-resume-btn" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-semibold text-sm transition transform hover:-translate-y-0.5 shadow-sm">
-              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              <span>View Resume</span>
-            </button>
-
-            <a href="https://www.linkedin.com/in/naradam-jyothi-lakshmi/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-3.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 border border-sky-200 font-semibold text-sm transition">
+            <!-- LinkedIn Link -->
+            <a href="https://www.linkedin.com/in/naradam-jyothi-lakshmi/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-3.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 border border-sky-200 font-semibold text-sm transition" title="LinkedIn Profile">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               <span>LinkedIn</span>
             </a>
 
+            <!-- GitHub Link -->
             <a href="https://github.com/Jyothinaradam08" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 transition" title="GitHub Profile">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
             </a>
           </div>
 
-          <!-- Quick Contact Chips -->
+          <!-- Quick Contact Chip: Clickable Email Only (No Phone) -->
           <div class="flex flex-wrap items-center gap-3 pt-2 text-xs text-slate-500">
-            <button class="copy-email-btn inline-flex items-center gap-1.5 hover:text-sky-600 transition font-medium" title="Click to copy email">
+            <a href="mailto:pandujyo2361@gmail.com" class="inline-flex items-center gap-1.5 text-slate-700 hover:text-sky-600 transition font-medium" title="Send email">
               <svg class="w-3.5 h-3.5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <span>jyopandu2361@gmail.com</span>
-            </button>
+              <span>pandujyo2361@gmail.com</span>
+            </a>
             <span class="text-slate-300">•</span>
-            <button class="copy-phone-btn inline-flex items-center gap-1.5 hover:text-sky-600 transition font-medium" title="Click to copy phone">
-              <svg class="w-3.5 h-3.5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <span>+91 7036872361</span>
+            <button class="copy-email-btn inline-flex items-center gap-1 hover:text-sky-600 transition font-medium text-sky-700" title="Copy email address">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+              <span>Copy Email</span>
             </button>
           </div>
 
@@ -227,19 +256,23 @@
                 </div>
               </div>
               <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold">
-                Active
+                Available
               </span>
             </div>
 
             <!-- Focus Matrix Snippet -->
             <div class="py-5 space-y-3.5">
               <div class="flex items-center justify-between text-xs">
-                <span class="text-slate-500">Primary Discipline</span>
-                <span class="text-slate-900 font-semibold">AI, ML & NLP Engineering</span>
+                <span class="text-slate-500">Primary Focus</span>
+                <span class="text-slate-900 font-semibold">AI/ML, NLP &amp; Multimodal AI</span>
               </div>
               <div class="flex items-center justify-between text-xs">
-                <span class="text-slate-500">Current Institution</span>
-                <span class="text-slate-900 font-semibold">National Institute of Technology, Raipur</span>
+                <span class="text-slate-500">Current Degree</span>
+                <span class="text-slate-900 font-semibold">M.Tech Information Technology</span>
+              </div>
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-500">Institution</span>
+                <span class="text-slate-900 font-semibold">NIT Raipur (National Institute of Technology)</span>
               </div>
               <div class="flex items-center justify-between text-xs">
                 <span class="text-slate-500">M.Tech Academic Record</span>
@@ -250,8 +283,8 @@
                 <span class="text-slate-700 font-bold bg-slate-100 px-2.5 py-0.5 rounded border border-slate-200">CGPA 8.60 / 10 (JNTUA)</span>
               </div>
               <div class="flex items-center justify-between text-xs">
-                <span class="text-slate-500">Core Stack</span>
-                <span class="text-slate-900 font-mono text-[11px] font-medium">PyTorch, React, Node, Python, Whisper</span>
+                <span class="text-slate-500">Core Technologies</span>
+                <span class="text-slate-900 font-mono text-[11px] font-medium">PyTorch, Whisper, Python, React, Node.js</span>
               </div>
             </div>
 
@@ -263,10 +296,10 @@
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
                 <span class="ml-2 text-[10px] text-sky-300">jyothi@nit-raipur:~/research</span>
               </div>
-              <p class="text-sky-300">$ verisense-ai --evaluate --multimodal</p>
+              <p class="text-sky-300">$ python -m verisense.pipeline --evaluate</p>
               <p class="text-slate-300">[✓] Whisper transcription: English, Hindi, Telugu</p>
-              <p class="text-slate-300">[✓] TF-IDF + Logistic Regression: Calibrated</p>
-              <p class="text-sky-400 font-semibold">[✓] Verdict: Misinformation Confidence 98.4%</p>
+              <p class="text-slate-300">[✓] Multimodal verification pipeline: Active</p>
+              <p class="text-emerald-400 font-semibold">[✓] Explainable AI verdict generated</p>
             </div>
 
           </div>
@@ -290,9 +323,9 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block mb-2">Background & Journey</span>
+        <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block mb-2">Background &amp; Journey</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
-          Education & Academic Distinction
+          Education &amp; Academic Distinction
         </h2>
         <p class="text-sm sm:text-base text-slate-600 mt-3">
           Rigorous academic foundation in Computer Science and Information Technology from premier engineering institutions.
@@ -321,15 +354,15 @@
             <ul class="space-y-2 text-xs sm:text-sm text-slate-600 pt-3 border-t border-slate-100">
               <li class="flex items-start gap-2">
                 <svg class="w-4 h-4 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                <span>Maintaining top-tier academic score with <strong class="text-slate-900">8.87 CGPA</strong> in postgraduate IT engineering.</span>
+                <span>Maintaining top-tier academic score with <strong class="text-slate-900 font-semibold">8.87 CGPA</strong> in postgraduate IT engineering.</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg class="w-4 h-4 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                <span>Specialized research focus in Multimodal Misinformation Detection, Speech-to-Text NLP, and Advanced Machine Learning algorithms.</span>
+                <span>Specialized research focus in Multimodal Misinformation Detection, Speech Recognition, and Natural Language Processing.</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg class="w-4 h-4 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                <span>Deep hands-on coursework in High-Performance Computing, Information Retrieval, and Distributed Architectures.</span>
+                <span>Hands-on advanced coursework in Deep Learning, Information Retrieval, and Scalable Architectures.</span>
               </li>
             </ul>
           </div>
@@ -337,8 +370,8 @@
           <div class="mt-6 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5">
             <span class="text-[11px] px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-100 font-medium">Deep Learning</span>
             <span class="text-[11px] px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-100 font-medium">Multimodal AI</span>
-            <span class="text-[11px] px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-100 font-medium">Data Analytics</span>
-            <span class="text-[11px] px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-100 font-medium">Information Retrieval</span>
+            <span class="text-[11px] px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-100 font-medium">NLP &amp; Speech</span>
+            <span class="text-[11px] px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-100 font-medium">Information Technology</span>
           </div>
         </div>
 
@@ -361,15 +394,15 @@
             <ul class="space-y-2 text-xs sm:text-sm text-slate-600 pt-3 border-t border-slate-100">
               <li class="flex items-start gap-2">
                 <svg class="w-4 h-4 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                <span>Graduated with <strong class="text-slate-900">First Class with Distinction</strong> (8.60/10 CGPA).</span>
+                <span>Graduated with <strong class="text-slate-900 font-semibold">First Class with Distinction</strong> (8.60/10 CGPA).</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg class="w-4 h-4 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                <span>Comprehensive mastery of CS Fundamentals: Data Structures & Algorithms, Operating Systems, Computer Networks, and DBMS.</span>
+                <span>Mastered core CS foundations: Data Structures and Algorithms, Operating Systems, Computer Networks, and DBMS.</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg class="w-4 h-4 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                <span>Engineered robust full-stack web and database applications with React.js, Node.js, and MySQL.</span>
+                <span>Led development of full-stack web and database applications with React.js, Node.js, and MySQL.</span>
               </li>
             </ul>
           </div>
@@ -388,23 +421,47 @@
   </section>
 
   <!-- ==========================================================================
-       SKILLS MATRIX SECTION
+       RESEARCH & INTERESTS SECTION (NEW)
        ========================================================================== -->
-  <section id="skills" class="py-16 sm:py-20 relative bg-white">
+  <section id="research" class="py-16 sm:py-20 relative bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block mb-2">Research Focus</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
+          Research Interests &amp; AI Specializations
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3">
+          Exploring advanced machine learning architectures, multimodal verification pipelines, speech processing, and explainable AI for real-world impact.
+        </p>
+      </div>
+
+      <!-- Research Cards Container -->
+      <div id="research-interests-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by main.js from PORTFOLIO_DATA.researchInterests -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TECHNICAL SKILLS SECTION
+       ========================================================================== -->
+  <section id="skills" class="py-16 sm:py-20 relative bg-slate-50/70 border-y border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block mb-2">Technical Proficiency</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
-          Skills & Technical Expertise
+          Technical Skills &amp; Competencies
         </h2>
         <p class="text-sm sm:text-base text-slate-600 mt-3">
-          A balanced blend of cutting-edge Artificial Intelligence, Machine Learning algorithms, Full-Stack engineering, and core Computer Science foundations.
+          Clean categorization across Programming Languages, AI/ML, NLP, Full-Stack frameworks, Databases, and Core Computer Science.
         </p>
       </div>
 
       <!-- Skills Grid Container -->
-      <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Rendered dynamically by main.js from PORTFOLIO_DATA.skills -->
       </div>
 
@@ -414,30 +471,30 @@
   <!-- ==========================================================================
        FEATURED PROJECTS SECTION
        ========================================================================== -->
-  <section id="projects" class="py-16 sm:py-24 relative bg-slate-50/60 border-t border-slate-100">
+  <section id="projects" class="py-16 sm:py-24 relative bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header & Filter Controls -->
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div>
-          <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block mb-2">Portfolio Work</span>
+          <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block mb-2">Engineering Portfolio</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
-            Featured Projects & Innovations
+            Featured Projects &amp; Innovations
           </h2>
           <p class="text-sm sm:text-base text-slate-600 mt-2 max-w-xl">
-            Real-world systems engineered with modern ML architectures, multimodal speech & vision pipelines, and full-stack web applications.
+            Real-world systems engineered with modern ML pipelines, multimodal NLP architectures, and full-stack web applications.
           </p>
         </div>
 
         <!-- Filter Buttons -->
         <div class="flex flex-wrap items-center gap-2">
           <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="ai-ml">AI &amp; Machine Learning</button>
           <button class="filter-btn" data-filter="web-dev">Full-Stack Web</button>
         </div>
       </div>
 
-      <!-- Projects Grid (Clean 2x2 on desktop for 4 projects) -->
+      <!-- Projects Grid (2x2 layout for 4 projects) -->
       <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-7">
         <!-- Rendered dynamically by main.js from PORTFOLIO_DATA.projects -->
       </div>
@@ -448,30 +505,30 @@
   <!-- ==========================================================================
        RESUME & CREDENTIALS SECTION
        ========================================================================== -->
-  <section id="resume" class="py-16 sm:py-20 relative bg-white">
+  <section id="resume" class="py-16 sm:py-20 relative bg-slate-50/70 border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-200 relative overflow-hidden bg-gradient-to-r from-sky-50/50 via-white to-sky-50/30">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           <div class="lg:col-span-8 space-y-4">
-            <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block">Complete Profile</span>
+            <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block">Curriculum Vitae</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
               Ready to Review My Full Resume?
             </h2>
             <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
-              Includes comprehensive breakdowns of research initiatives at NIT Raipur, full-stack implementations, published GitHub repositories, academic honors (8.87 & 8.60 CGPA), and technical toolkits.
+              Includes comprehensive breakdowns of research initiatives at NIT Raipur, full-stack implementations, published GitHub repositories, academic honors (8.87 &amp; 8.60 CGPA), and technical toolkits.
             </p>
             
             <div class="flex flex-wrap gap-4 pt-2">
-              <button onclick="document.getElementById('resume-modal').classList.add('active'); document.body.style.overflow='hidden';" class="btn-skyblue inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm transition">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                <span>Interactive Resume Preview</span>
-              </button>
+              <a href="assets/Jyothi_Lakshmi_Naradam_Resume.pdf" download="Jyothi_Lakshmi_Naradam_Resume.pdf" class="btn-skyblue inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
 
-              <button onclick="window.print()" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-semibold text-sm transition shadow-sm">
-                <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-                <span>Print / Save as PDF</span>
+              <button id="view-resume-btn" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-semibold text-sm transition shadow-sm">
+                <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <span>Interactive Preview</span>
               </button>
             </div>
           </div>
@@ -488,11 +545,15 @@
               </div>
               <div class="text-slate-500 flex justify-between">
                 <span>Specialization:</span>
-                <span class="text-slate-800 font-semibold">AI, NLP, Full-Stack</span>
+                <span class="text-slate-800 font-semibold">AI/ML, NLP, Full-Stack</span>
+              </div>
+              <div class="text-slate-500 flex justify-between">
+                <span>M.Tech CGPA:</span>
+                <span class="text-sky-700 font-bold">8.87 / 10</span>
               </div>
               <div class="text-slate-500 flex justify-between">
                 <span>Availability:</span>
-                <span class="text-emerald-700 font-semibold">Immediate / Open to Roles</span>
+                <span class="text-emerald-700 font-semibold">Open to Opportunities</span>
               </div>
             </div>
           </div>
@@ -506,75 +567,59 @@
   <!-- ==========================================================================
        CONTACT & GET IN TOUCH SECTION
        ========================================================================== -->
-  <section id="contact" class="py-16 sm:py-24 relative bg-slate-50/70 border-t border-slate-100">
+  <section id="contact" class="py-16 sm:py-24 relative bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
-        <!-- Left Contact Info -->
+        <!-- Left Contact Info (NO PHONE NUMBER) -->
         <div class="lg:col-span-5 space-y-6">
           <span class="text-xs font-bold text-sky-600 uppercase tracking-widest block">Let's Connect</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
             Get in Touch
           </h2>
           <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-            I am currently open to exciting roles in <strong class="text-slate-900">Artificial Intelligence, Machine Learning, Data Analytics, and Software Engineering</strong>. Whether you have an internship, job opportunity, or research collaboration, feel free to reach out!
+            I am currently open to exciting opportunities in <strong class="text-slate-900">Artificial Intelligence, Machine Learning, Natural Language Processing, and Full-Stack Software Engineering</strong>. Whether you have an internship, full-time role, or research discussion, feel free to reach out!
           </p>
 
           <!-- Contact Channels List -->
           <div class="space-y-4 pt-2">
             
-            <!-- Email -->
+            <!-- Email Card with Mailto & Copy -->
             <div class="glass-card rounded-2xl p-4 flex items-center justify-between bg-white shadow-sm border border-slate-200">
               <div class="flex items-center gap-3.5">
-                <div class="p-2.5 rounded-xl bg-sky-50 text-sky-600 border border-sky-100">
+                <div class="p-2.5 rounded-xl bg-sky-50 text-sky-600 border border-sky-100 flex-shrink-0">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                 </div>
                 <div>
                   <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Email Address</span>
-                  <a href="mailto:jyopandu2361@gmail.com" class="text-sm font-semibold text-slate-900 hover:text-sky-600 transition">jyopandu2361@gmail.com</a>
+                  <a href="mailto:pandujyo2361@gmail.com" class="text-sm font-semibold text-slate-900 hover:text-sky-600 transition">pandujyo2361@gmail.com</a>
                 </div>
               </div>
-              <button class="copy-email-btn p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-sky-700 transition" title="Copy Email">
+              <button class="copy-email-btn p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-sky-700 transition" title="Copy Email Address">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
               </button>
             </div>
 
-            <!-- Phone -->
-            <div class="glass-card rounded-2xl p-4 flex items-center justify-between bg-white shadow-sm border border-slate-200">
-              <div class="flex items-center gap-3.5">
-                <div class="p-2.5 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                </div>
-                <div>
-                  <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Phone / WhatsApp</span>
-                  <a href="tel:+917036872361" class="text-sm font-semibold text-slate-900 hover:text-emerald-600 transition">+91 7036872361</a>
-                </div>
-              </div>
-              <button class="copy-phone-btn p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 transition" title="Copy Phone Number">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
-              </button>
-            </div>
-
-            <!-- Social Networks -->
+            <!-- Social Networks: LinkedIn & GitHub -->
             <div class="grid grid-cols-2 gap-4">
               <a href="https://www.linkedin.com/in/naradam-jyothi-lakshmi/" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-4 flex items-center gap-3 hover:border-sky-400 transition bg-white shadow-sm border border-slate-200">
-                <div class="p-2 rounded-lg bg-sky-50 text-sky-700">
+                <div class="p-2 rounded-lg bg-sky-50 text-sky-700 flex-shrink-0">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </div>
                 <div>
                   <span class="text-xs font-bold text-slate-900 block">LinkedIn</span>
-                  <span class="text-[11px] text-slate-500 font-medium">Connect with me</span>
+                  <span class="text-[11px] text-slate-500 font-medium">Connect Profile</span>
                 </div>
               </a>
 
               <a href="https://github.com/Jyothinaradam08" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-4 flex items-center gap-3 hover:border-sky-400 transition bg-white shadow-sm border border-slate-200">
-                <div class="p-2 rounded-lg bg-slate-100 text-slate-700">
+                <div class="p-2 rounded-lg bg-slate-100 text-slate-700 flex-shrink-0">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                 </div>
                 <div>
                   <span class="text-xs font-bold text-slate-900 block">GitHub</span>
-                  <span class="text-[11px] text-slate-500 font-medium">View repositories</span>
+                  <span class="text-[11px] text-slate-500 font-medium">Repositories</span>
                 </div>
               </a>
             </div>
@@ -582,7 +627,7 @@
           </div>
         </div>
 
-        <!-- Right Interactive Direct Message Form -->
+        <!-- Right Direct Message Form -->
         <div class="lg:col-span-7">
           <div id="contact-form-card" class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-200 bg-white shadow-sm">
             <h3 class="text-xl font-bold text-slate-900 mb-2">Send Direct Message</h3>
@@ -602,7 +647,7 @@
 
               <div>
                 <label for="contact-subject" class="block text-xs font-semibold text-slate-700 mb-1.5">Subject / Opportunity Title *</label>
-                <input type="text" id="contact-subject" required placeholder="AI/ML Engineer Role at..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-sky-500 focus:bg-white transition">
+                <input type="text" id="contact-subject" required placeholder="AI/ML Engineer Role..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-sky-500 focus:bg-white transition">
               </div>
 
               <div>
@@ -632,12 +677,13 @@
           JN
         </div>
         <p class="text-xs text-slate-500">
-          © 2026 Jyothi Lakshmi Naradam. Crafted for LinkedIn & Career Excellence.
+          © 2026 Jyothi Lakshmi Naradam. AI/ML Engineer &amp; Full-Stack Developer.
         </p>
       </div>
 
       <div class="flex items-center gap-5 text-xs text-slate-500 font-medium">
         <a href="#hero" class="hover:text-sky-600 transition">Back to Top ↑</a>
+        <a href="mailto:pandujyo2361@gmail.com" class="hover:text-sky-600 transition">pandujyo2361@gmail.com</a>
         <a href="https://www.linkedin.com/in/naradam-jyothi-lakshmi/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition">LinkedIn</a>
         <a href="https://github.com/Jyothinaradam08" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition">GitHub</a>
       </div>
@@ -660,7 +706,7 @@
     </div>
   </div>
 
-  <!-- 2. Full Resume View Modal -->
+  <!-- 2. Full Resume View Modal (NO PHONE NUMBER) -->
   <div id="resume-modal" class="modal-overlay">
     <div class="modal-container relative max-w-3xl bg-white">
       <button id="resume-modal-close-btn" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 transition z-10 border border-slate-200" aria-label="Close Modal">
@@ -673,8 +719,7 @@
         <div class="border-b border-slate-200 pb-5">
           <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">JYOTHI LAKSHMI NARADAM</h2>
           <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-600 mt-2 font-mono">
-            <span>📞 +91 7036872361</span>
-            <span>✉️ jyopandu2361@gmail.com</span>
+            <span>✉️ <a href="mailto:pandujyo2361@gmail.com" class="text-sky-600 hover:underline">pandujyo2361@gmail.com</a></span>
             <span>🔗 <a href="https://www.linkedin.com/in/naradam-jyothi-lakshmi/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">linkedin.com/in/naradam-jyothi-lakshmi</a></span>
             <span>🐙 <a href="https://github.com/Jyothinaradam08" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline">github.com/Jyothinaradam08</a></span>
           </div>
@@ -684,7 +729,7 @@
         <div>
           <h3 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-1.5">OBJECTIVE</h3>
           <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
-            M.Tech Information Technology student at NIT Raipur with a strong foundation in Artificial Intelligence, Machine Learning, Data Analytics, and Full-Stack Web Development. Interested in applying technical and problem-solving skills to develop intelligent, data-driven, and scalable solutions.
+            M.Tech IT student at NIT Raipur, passionate about building intelligent applications using Machine Learning, Deep Learning, Natural Language Processing, and modern web technologies.
           </p>
         </div>
 
@@ -704,8 +749,8 @@
 
             <div class="flex justify-between items-start text-xs sm:text-sm pt-2 border-t border-slate-100">
               <div>
-                <strong class="text-slate-900 font-semibold">B.Tech in Computer Science</strong>, JNTUA College of Engineering, Kalikiri
-                <div class="text-sky-700 font-bold mt-0.5">CGPA: 8.6 / 10</div>
+                <strong class="text-slate-900 font-semibold">B.Tech in Computer Science and Engineering</strong>, JNTUA College of Engineering, Kalikiri
+                <div class="text-sky-700 font-bold mt-0.5">CGPA: 8.60 / 10 (Distinction)</div>
               </div>
               <div class="text-right text-xs text-slate-500 font-medium">
                 2020 – 2024<br>AP, India
@@ -716,66 +761,68 @@
 
         <!-- Skills -->
         <div>
-          <h3 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-2">SKILLS</h3>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-2">TECHNICAL SKILLS</h3>
           <div class="text-xs sm:text-sm space-y-1.5 text-slate-700">
-            <div><strong class="text-slate-900 font-semibold">Programming Languages:</strong> C, Python, Java, JavaScript</div>
+            <div><strong class="text-slate-900 font-semibold">Programming Languages:</strong> Python, Java, C, JavaScript</div>
+            <div><strong class="text-slate-900 font-semibold">AI/ML:</strong> Machine Learning, Deep Learning, PyTorch, Scikit-learn, XGBoost</div>
+            <div><strong class="text-slate-900 font-semibold">NLP:</strong> Natural Language Processing, Transformers, Whisper</div>
+            <div><strong class="text-slate-900 font-semibold">Frontend:</strong> React.js, Redux, HTML, CSS</div>
+            <div><strong class="text-slate-900 font-semibold">Backend:</strong> Node.js, Express.js</div>
             <div><strong class="text-slate-900 font-semibold">Databases:</strong> MySQL, PostgreSQL</div>
-            <div><strong class="text-slate-900 font-semibold">Web Technologies:</strong> React.js, Node.js, Express.js, Redux, CSS, JWT</div>
-            <div><strong class="text-slate-900 font-semibold">CS Fundamentals:</strong> DSA, Operating Systems, Computer Networks, OOP, DBMS</div>
-            <div><strong class="text-slate-900 font-semibold">AI, Machine Learning:</strong> PyTorch, Scikit-learn, XGBoost, NLP, Transformers, Whisper</div>
+            <div><strong class="text-slate-900 font-semibold">Core Computer Science:</strong> Data Structures and Algorithms, Operating Systems, DBMS, Computer Networks</div>
           </div>
         </div>
 
         <!-- Projects -->
         <div>
-          <h3 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-3">PROJECTS</h3>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-3">FEATURED PROJECTS</h3>
           <div class="space-y-4 text-xs sm:text-sm">
             
             <div>
               <div class="flex items-center justify-between">
-                <span class="font-bold text-slate-900">AI Powered Resume Screening & Recommendation System</span>
+                <span class="font-bold text-slate-900">VeriSense AI – Multimodal Misinformation Detection Platform</span>
+                <span class="text-xs font-mono text-sky-700 font-semibold">Whisper, NLP, ML, Python, Flask, React</span>
+              </div>
+              <ul class="list-disc list-inside text-slate-600 space-y-1 mt-1 text-xs">
+                <li>End-to-end full-stack misinformation detection platform supporting English, Hindi, and Telugu across text, audio, and video inputs.</li>
+                <li>Built multimodal processing pipeline with FFmpeg and OpenAI Whisper for automatic speech recognition and language identification.</li>
+                <li>Engineered explainable predictions providing class probabilities, confidence levels, influential tokens, and transcript inspection.</li>
+              </ul>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-slate-900">AI-Powered Resume Screening &amp; Recommendation System</span>
                 <span class="text-xs font-mono text-sky-700 font-semibold">Python, NLP, Streamlit, ML, MySQL</span>
               </div>
               <ul class="list-disc list-inside text-slate-600 space-y-1 mt-1 text-xs">
-                <li>Developed an NLP-based resume screening system to parse PDF/DOCX resumes, extract relevant skills, and generate automated candidate evaluation reports.</li>
-                <li>Built a recommendation engine providing personalized resume improvement, interview preparation, and role-based upskilling suggestions across 10+ job roles.</li>
-                <li>Integrated MySQL with an interactive analytics dashboard supporting candidate tracking, 2 export formats (Excel/PDF), and experience- and role-based insights.</li>
+                <li>Automated resume parsing engine extracting technical skills, education, and candidate experience from PDF and DOCX files.</li>
+                <li>Developed recommendation engine ranking candidates across 10+ defined job roles and generating targeted upskilling suggestions.</li>
+                <li>Integrated MySQL database tracking and Streamlit dashboard with automated report export in Excel and PDF formats.</li>
               </ul>
             </div>
 
             <div class="pt-3 border-t border-slate-100">
               <div class="flex items-center justify-between">
-                <span class="font-bold text-slate-900">Spotify-Based Music Streaming Web App</span>
-                <span class="text-xs font-mono text-sky-700 font-semibold">React.js, Spotify API, JavaScript, OAuth</span>
+                <span class="font-bold text-slate-900">Spotify-Based Music Streaming Web Application</span>
+                <span class="text-xs font-mono text-sky-700 font-semibold">React.js, Spotify Web API, OAuth 2.0, Redux</span>
               </div>
               <ul class="list-disc list-inside text-slate-600 space-y-1 mt-1 text-xs">
-                <li>Built a responsive music streaming application integrating Spotify Web API for real-time track search, playlist retrieval, and playback control.</li>
-                <li>Implemented secure OAuth authentication for personalized user access and session-based music streaming.</li>
-                <li>Developed 5+ core features including track search, playlist retrieval, playback control, user authentication, and dynamic track navigation.</li>
+                <li>Feature-rich web application integrating Spotify Web API for real-time track search, playlist retrieval, and playback controls.</li>
+                <li>Implemented secure OAuth 2.0 user authentication flow with token refresh and session state management.</li>
+                <li>Built 5+ core application modules including playback controls, playlist management, and responsive track browsing.</li>
               </ul>
             </div>
 
             <div class="pt-3 border-t border-slate-100">
               <div class="flex items-center justify-between">
-                <span class="font-bold text-slate-900">VeriSense AI – AI-Powered Multilingual Multimodal Misinformation Detection Platform</span>
-                <span class="text-xs font-mono text-sky-700 font-semibold">React.js, Node.js, Python, Flask, Whisper</span>
+                <span class="font-bold text-slate-900">Real-Time Currency Converter Web Application</span>
+                <span class="text-xs font-mono text-sky-700 font-semibold">React.js, Node.js, Express, REST APIs</span>
               </div>
               <ul class="list-disc list-inside text-slate-600 space-y-1 mt-1 text-xs">
-                <li>Developed a full-stack misinformation detection platform supporting English, Hindi, and Telugu across text, audio, and video inputs, generating REAL/FAKE verdicts with confidence scores.</li>
-                <li>Built a multimodal processing pipeline using FFmpeg and OpenAI Whisper for audio/video transcription, with language-specific TF-IDF + Logistic Regression classifiers served through Python Flask.</li>
-                <li>Implemented explainable predictions with class probabilities, confidence levels, influential terms, transcript viewing, analysis history, and model performance insights.</li>
-              </ul>
-            </div>
-
-            <div class="pt-3 border-t border-slate-100">
-              <div class="flex items-center justify-between">
-                <span class="font-bold text-slate-900">Full-Stack Real-Time Currency Converter Web Application</span>
-                <span class="text-xs font-mono text-sky-700 font-semibold">React.js, Node.js, Express, REST API</span>
-              </div>
-              <ul class="list-disc list-inside text-slate-600 space-y-1 mt-1 text-xs">
-                <li>Built a responsive full-stack currency exchange platform integrating real-time foreign exchange REST APIs across 150+ world currencies.</li>
-                <li>Engineered instant bidirectional conversion, one-click currency swapping, and quick currency search with reactive state management.</li>
-                <li>Implemented Node.js/Express backend service with intelligent exchange rate caching to optimize latency and prevent external API quota exhaustion.</li>
+                <li>Full-stack currency conversion platform integrating live foreign exchange REST APIs across 150+ world currencies.</li>
+                <li>Engineered instantaneous bidirectional conversion, one-click currency swapping, and quick search with reactive state management.</li>
+                <li>Implemented Node.js/Express backend service with intelligent in-memory exchange rate caching to optimize latency.</li>
               </ul>
             </div>
 
@@ -784,10 +831,10 @@
 
         <!-- Footer Actions -->
         <div class="pt-6 border-t border-slate-200 flex justify-between items-center">
-          <button onclick="window.print()" class="btn-skyblue px-5 py-2.5 rounded-xl text-xs tracking-wide transition flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-            <span>Print / Save as PDF</span>
-          </button>
+          <a href="assets/Jyothi_Lakshmi_Naradam_Resume.pdf" download="Jyothi_Lakshmi_Naradam_Resume.pdf" class="btn-skyblue px-5 py-2.5 rounded-xl text-xs tracking-wide transition flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download Official PDF</span>
+          </a>
           <button onclick="document.getElementById('resume-modal').classList.remove('active'); document.body.style.overflow='';" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-4 py-2 transition">
             Close
           </button>

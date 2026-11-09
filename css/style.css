@@ -359,6 +359,39 @@ body {
   transform: scale(1) translateY(0);
 }
 
+/* Project Thumbnail Styling */
+.project-thumb-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  background-color: #f1f5f9;
+  border-bottom: 1px solid var(--bg-card-border);
+}
+
+.project-thumb-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform var(--transition-smooth);
+}
+
+.project-card:hover .project-thumb-container img {
+  transform: scale(1.03);
+}
+
+/* Research Card */
+.research-card {
+  transition: all var(--transition-normal);
+}
+
+.research-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-light);
+  box-shadow: var(--glow-shadow);
+}
+
 /* Print Stylesheet for Resume */
 @media print {
   body {

@@ -1,90 +1,113 @@
 // Structured data for Jyothi Lakshmi Naradam's Portfolio
-// Professional Palette: Crisp White Background, Deep Slate & Sky Blue Accents
+// AI/ML Engineer | NLP & Multimodal AI | Full-Stack Developer
+// NIT Raipur M.Tech Scholar (8.87 CGPA)
 
 const PORTFOLIO_DATA = {
   personal: {
     name: "Jyothi Lakshmi Naradam",
-    title: "AI & Machine Learning Engineer | Full-Stack Developer",
-    subtitle: "M.Tech Information Technology @ NIT Raipur | CGPA: 8.87/10",
-    email: "jyopandu2361@gmail.com",
-    phone: "+91 7036872361",
-    location: "Raipur, India / Andhra Pradesh, India",
+    headline: "AI/ML Engineer | NLP & Multimodal AI | Full-Stack Developer",
+    institution: "National Institute of Technology, Raipur (NIT Raipur)",
+    degree: "M.Tech in Information Technology",
+    mtechCgpa: "8.87",
+    btechCgpa: "8.60",
+    email: "pandujyo2361@gmail.com",
+    location: "Raipur, Chhattisgarh & Andhra Pradesh, India",
     linkedin: "https://www.linkedin.com/in/naradam-jyothi-lakshmi/",
     github: "https://github.com/Jyothinaradam08",
-    bio: "M.Tech Information Technology student at National Institute of Technology (NIT) Raipur with a strong foundation in Artificial Intelligence, Machine Learning, Data Analytics, and Full-Stack Web Development. Passionate about building intelligent, data-driven, and scalable systems that solve complex real-world challenges.",
-    statusBadge: "Open to AI/ML & Software Engineering Roles (Internships / Full-Time)",
+    resumePath: "assets/Jyothi_Lakshmi_Naradam_Resume.pdf",
+    bio: "M.Tech IT student at NIT Raipur, passionate about building intelligent applications using Machine Learning, Deep Learning, Natural Language Processing, and modern web technologies.",
+    statusBadge: "Open to AI/ML & Software Engineering Roles",
     stats: [
       { label: "M.Tech CGPA", value: "8.87", suffix: "/10", sub: "NIT Raipur" },
       { label: "B.Tech CGPA", value: "8.60", suffix: "/10", sub: "JNTUA College of Eng." },
-      { label: "Core Projects", value: "4+", suffix: "", sub: "AI, ML & Full-Stack" },
+      { label: "Core Projects", value: "4", suffix: "", sub: "AI/ML & Full-Stack" },
       { label: "Multilingual Pipeline", value: "3", suffix: " Langs", sub: "English, Hindi, Telugu" }
     ]
   },
 
+  researchInterests: [
+    {
+      title: "Multimodal AI",
+      description: "Developing cross-modal architectures that unify textual semantics, acoustic signals, and visual data for robust representation learning.",
+      icon: "layers"
+    },
+    {
+      title: "Natural Language Processing",
+      description: "Text classification, semantic entity extraction, sequence modeling, and applying transformer-based linguistic embeddings.",
+      icon: "cpu"
+    },
+    {
+      title: "Misinformation Detection",
+      description: "Engineering multilingual verification systems that detect false or deceptive claims across diverse regional dialects and media formats.",
+      icon: "shield"
+    },
+    {
+      title: "Speech Recognition",
+      description: "Building end-to-end Automatic Speech Recognition (ASR) pipelines with OpenAI Whisper for multi-accent and multi-language transcription.",
+      icon: "mic"
+    },
+    {
+      title: "Deep Learning",
+      description: "Designing neural networks with PyTorch, optimizing gradient dynamics, and fine-tuning models for high inference efficiency.",
+      icon: "activity"
+    },
+    {
+      title: "Explainable AI (XAI)",
+      description: "Demystifying black-box machine learning predictions through probability calibrations, confidence scores, and token-level feature attributions.",
+      icon: "eye"
+    }
+  ],
+
   skills: {
     categories: [
+      {
+        id: "programming-languages",
+        name: "Programming Languages",
+        icon: "code",
+        description: "Core programming and algorithmic development languages",
+        skills: ["Python", "Java", "C", "JavaScript"]
+      },
       {
         id: "ai-ml",
         name: "AI & Machine Learning",
         icon: "brain",
-        description: "Deep learning, NLP, transformers, and multimodal classification pipelines",
-        skills: [
-          { name: "PyTorch", level: "Advanced", badge: "Core ML" },
-          { name: "Scikit-learn", level: "Advanced", badge: "Classifiers & Regressors" },
-          { name: "NLP & Transformers", level: "Advanced", badge: "Text Processing" },
-          { name: "OpenAI Whisper", level: "Proficient", badge: "Speech-to-Text" },
-          { name: "XGBoost", level: "Proficient", badge: "Ensemble Learning" },
-          { name: "Multimodal ML", level: "Advanced", badge: "Audio, Video, Text" },
-          { name: "TF-IDF & Feature Extraction", level: "Advanced", badge: "Vectorization" },
-          { name: "Model Evaluation", level: "Advanced", badge: "Explainability & Metrics" }
-        ]
+        description: "Statistical machine learning, deep learning architectures, and model training",
+        skills: ["Machine Learning", "Deep Learning", "PyTorch", "Scikit-learn", "XGBoost"]
       },
       {
-        id: "web-dev",
-        name: "Web & Full-Stack Technologies",
+        id: "nlp",
+        name: "Natural Language Processing (NLP)",
+        icon: "cpu",
+        description: "Text processing, transformers, and speech-to-text pipelines",
+        skills: ["Natural Language Processing", "Transformers", "Whisper"]
+      },
+      {
+        id: "frontend",
+        name: "Frontend Development",
         icon: "layout",
-        description: "Modern frontend frameworks, responsive UI, state management, and backend services",
-        skills: [
-          { name: "React.js", level: "Advanced", badge: "Frontend Framework" },
-          { name: "Node.js", level: "Proficient", badge: "Runtime Environment" },
-          { name: "Express.js", level: "Proficient", badge: "RESTful Services" },
-          { name: "Redux", level: "Proficient", badge: "State Management" },
-          { name: "Flask (Python)", level: "Advanced", badge: "ML Microservices" },
-          { name: "Streamlit", level: "Advanced", badge: "Data Apps" },
-          { name: "JWT Authentication", level: "Proficient", badge: "Token Security" },
-          { name: "OAuth 2.0", level: "Proficient", badge: "Third-Party Auth" },
-          { name: "CSS3 & Modern Styling", level: "Advanced", badge: "Responsive UI" }
-        ]
+        description: "Modern, component-driven user interfaces and reactive state management",
+        skills: ["React.js", "Redux", "HTML", "CSS"]
       },
       {
-        id: "languages",
-        name: "Programming Languages & DB",
-        icon: "code",
-        description: "Core algorithms, data engineering, relational and object databases",
-        skills: [
-          { name: "Python", level: "Expert", badge: "AI, ML, Backend" },
-          { name: "JavaScript (ES6+)", level: "Advanced", badge: "Modern Web" },
-          { name: "Java", level: "Proficient", badge: "OOP & Enterprise" },
-          { name: "C", level: "Proficient", badge: "Systems & Memory" },
-          { name: "MySQL", level: "Advanced", badge: "Relational Queries" },
-          { name: "PostgreSQL", level: "Proficient", badge: "Relational DB" }
-        ]
+        id: "backend",
+        name: "Backend Development",
+        icon: "server",
+        description: "RESTful API engineering, caching, and scalable server runtime",
+        skills: ["Node.js", "Express.js"]
       },
       {
-        id: "fundamentals",
-        name: "CS Fundamentals & Tools",
+        id: "databases",
+        name: "Databases",
+        icon: "database",
+        description: "Relational schema design, query optimization, and structured persistence",
+        skills: ["MySQL", "PostgreSQL"]
+      },
+      {
+        id: "core-cs",
+        name: "Core Computer Science",
         icon: "terminal",
-        description: "Theoretical foundations and modern engineering tooling",
-        skills: [
-          { name: "Data Structures & Algorithms", level: "Strong", badge: "Problem Solving" },
-          { name: "Object-Oriented Programming (OOP)", level: "Strong", badge: "Design Principles" },
-          { name: "Operating Systems", level: "Strong", badge: "Concurrency & Memory" },
-          { name: "Computer Networks", level: "Strong", badge: "Protocols & TCP/IP" },
-          { name: "Database Management Systems (DBMS)", level: "Strong", badge: "Indexing & Normalization" },
-          { name: "Git & Version Control", level: "Proficient", badge: "Collaboration" },
-          { name: "FFmpeg Pipeline", level: "Proficient", badge: "Media Processing" },
-          { name: "REST APIs & Postman", level: "Advanced", badge: "API Testing" }
-        ]
+        description: "Foundational computer science principles and software engineering fundamentals",
+        skills: ["Data Structures and Algorithms", "Operating Systems", "DBMS", "Computer Networks"]
       }
     ]
   },
@@ -92,136 +115,134 @@ const PORTFOLIO_DATA = {
   projects: [
     {
       id: "verisense-ai",
-      title: "VeriSense AI – AI-Powered Multilingual Multimodal Misinformation Detection Platform",
+      title: "VeriSense AI – Multimodal Misinformation Detection Platform",
       shortTitle: "VeriSense AI: Multimodal Fact Verification",
       category: "ai-ml",
       featured: true,
       badge: "Featured AI Project",
       accentColor: "#0284c7",
-      icon: "shield-alert",
-      shortDesc: "End-to-end full-stack platform detecting misinformation across Text, Audio, and Video in English, Hindi, and Telugu with explainable AI verdicts.",
-      technologies: ["React.js", "Node.js", "Python", "Flask", "OpenAI Whisper", "FFmpeg", "NLP", "Scikit-Learn", "TF-IDF"],
+      image: "assets/verisense-ai.svg",
+      shortDesc: "End-to-end multimodal misinformation detection platform analyzing text, audio, and video inputs in English, Hindi, and Telugu with explainable AI verdicts.",
+      technologies: ["Whisper", "NLP", "Machine Learning", "Deep Learning", "Python", "Flask", "React.js", "Node.js", "FFmpeg", "Scikit-learn"],
       highlights: [
-        "Multimodal input ingestion for text articles, voice recordings (audio), and video clips.",
-        "Trilingual language detection and processing across English, Hindi, and Telugu.",
-        "Audio/video processing pipeline with FFmpeg and OpenAI Whisper speech-to-text.",
-        "TF-IDF feature extraction combined with language-specific Logistic Regression classifiers.",
-        "Transparent explainability: confidence scores, influential token highlights, transcript display, and historical analytics."
+        "Multimodal analysis ingestion supporting text articles, audio recordings, and video clips.",
+        "Trilingual pipeline supporting English, Hindi, and Telugu languages.",
+        "Audio/video processing pipeline with FFmpeg and OpenAI Whisper automatic speech recognition (ASR).",
+        "Language-specific TF-IDF vectorization and calibrated Logistic Regression classifiers.",
+        "Explainable AI output providing prediction probabilities, confidence metrics, and influential token highlights."
       ],
-      metrics: [
+      keySpecs: [
         { label: "Modalities", val: "Text, Audio, Video" },
-        { label: "Supported Languages", val: "English, Hindi, Telugu" },
-        { label: "Pipeline Latency", val: "Real-Time / Streamlined" },
+        { label: "Languages", val: "English, Hindi, Telugu" },
+        { label: "Speech Engine", val: "OpenAI Whisper ASR" },
         { label: "Verdict System", val: "REAL / FAKE + Probabilities" }
       ],
       architecture: [
-        "Frontend: Interactive React interface for media upload, live transcription review, and explainable prediction dashboards.",
-        "Backend / Orchestrator: Node.js/Express API layer managing upload sessions, file storage, and verification requests.",
-        "Media Processing: FFmpeg extracts audio tracks; OpenAI Whisper executes automatic speech recognition (ASR) with trilingual language identification.",
-        "ML Engine: Python Flask microservice evaluating extracted text with specialized TF-IDF vectorizers and calibrated Logistic Regression classifiers.",
-        "Explainable AI (XAI): Returns prediction probabilities, confidence metrics, and influential keyword weights."
+        "Frontend Client: React.js interface for uploading multimedia inputs, monitoring transcription, and reviewing explainability results.",
+        "Backend Orchestrator: Node.js/Express server coordinating upload sessions, storage, and API communication.",
+        "Media Processing: FFmpeg extracts audio streams; OpenAI Whisper transcribes speech with automatic language identification.",
+        "ML Inference Service: Python Flask microservice evaluating text using TF-IDF feature extractors and trained classifiers.",
+        "Explainability Layer: Computes prediction probabilities and highlights influential tokens driving the classification verdict."
       ],
       codeUrl: "https://github.com/Jyothinaradam08",
       liveUrl: null
     },
     {
       id: "resume-screening",
-      title: "AI Powered Resume Screening & Recommendation System",
-      shortTitle: "AI Resume Screening & Recommendation",
+      title: "AI-Powered Resume Screening & Recommendation System",
+      shortTitle: "AI Resume Screening System",
       category: "ai-ml",
       featured: true,
       badge: "AI & HR Tech",
       accentColor: "#0ea5e9",
-      icon: "file-search",
-      shortDesc: "Intelligent NLP system parsing resumes, benchmarking candidate skills against job profiles, and delivering targeted upskilling roadmaps.",
-      technologies: ["Python", "NLP", "Streamlit", "Machine Learning", "MySQL", "Scikit-learn", "PDF/DOCX Parsing"],
+      image: "assets/resume-screening.png",
+      shortDesc: "Intelligent NLP system parsing resumes, extracting technical skills, evaluating candidate compatibility, and providing role-based recommendations.",
+      technologies: ["Python", "Natural Language Processing", "Streamlit", "Machine Learning", "Scikit-learn", "MySQL", "PDF/DOCX Parsing"],
       highlights: [
-        "Automated extraction of skills, education, and work experience from PDF and DOCX resumes.",
-        "Machine learning evaluation engine ranking candidate compatibility against 10+ defined job roles.",
-        "Personalized resume recommendations, pinpointing skill gaps, interview preparation questions, and course suggestions.",
-        "Interactive analytics dashboard built with Streamlit and backed by relational MySQL candidate tracking.",
-        "Dual export functionality supporting instant Excel and PDF candidate evaluation reports."
+        "Automated parsing of PDF and DOCX resume documents to extract candidate skills, education, and experience.",
+        "Candidate evaluation engine ranking candidate compatibility across 10+ defined job roles.",
+        "Personalized resume recommendations highlighting skill gaps, relevant interview questions, and learning roadmaps.",
+        "Interactive analytics dashboard built with Streamlit and backed by relational candidate tracking in MySQL.",
+        "Automated generation and export of candidate evaluation reports in Excel and PDF formats."
       ],
-      metrics: [
-        { label: "Job Roles Supported", val: "10+ Roles" },
-        { label: "File Formats", val: "PDF & DOCX Parsed" },
-        { label: "Export Formats", val: "Excel & PDF Reports" },
-        { label: "Database", val: "MySQL Relational Tracking" }
+      keySpecs: [
+        { label: "Supported Formats", val: "PDF & DOCX Parsed" },
+        { label: "Role Alignment", val: "10+ Job Categories" },
+        { label: "Database Layer", val: "MySQL Relational Tracking" },
+        { label: "Report Export", val: "Excel & PDF Summaries" }
       ],
       architecture: [
-        "Document Parsing: Custom Python pipeline extracting textual segments and entities from arbitrary resume layouts.",
-        "Skill Entity Extractor: Tokenization, lemmatization, and phrase matching against standardized industry taxonomy.",
-        "Recommendation Engine: Cosine similarity and ranking algorithms assessing job role alignment and upskilling gaps.",
-        "Analytics Dashboard: Streamlit interactive interface presenting score breakdowns, candidate leaderboards, and metric distributions.",
-        "Data Storage: MySQL database schema tracking candidates, scores, timestamped evaluations, and batch statistics."
+        "Document Parsing: Python text extraction module processing structured and unstructured resume documents.",
+        "NLP Skill Extractor: Tokenization, keyword matching, and taxonomy lookup for technical skill identification.",
+        "Candidate Matching: Scoring algorithms evaluating profile alignment against job role requirements.",
+        "Streamlit Dashboard: Interactive user interface displaying candidate rankings, score distributions, and gap analysis.",
+        "Data Storage: MySQL database schema recording parsed applicant metadata and evaluation histories."
       ],
       codeUrl: "https://github.com/Jyothinaradam08",
       liveUrl: null
     },
     {
       id: "spotify-streaming",
-      title: "Spotify-Based Music Streaming Web Application",
-      shortTitle: "Spotify Web Streaming Application",
+      title: "Spotify-Based Music Streaming Application",
+      shortTitle: "Spotify Music Streaming App",
       category: "web-dev",
       featured: true,
       badge: "Full-Stack Web & API",
       accentColor: "#0284c7",
-      icon: "music",
-      shortDesc: "Feature-rich, high-performance music streaming application integrating Spotify Web API with OAuth 2.0 user authentication and real-time playback.",
-      technologies: ["React.js", "Spotify Web API", "JavaScript (ES6+)", "RESTful APIs", "OAuth 2.0", "Redux", "Modern CSS"],
+      image: "assets/spotify-app.svg",
+      shortDesc: "Feature-rich web application integrating Spotify Web API with OAuth 2.0 user authentication, playlist management, and music playback controls.",
+      technologies: ["React.js", "Spotify Web API", "JavaScript", "OAuth 2.0", "Redux", "HTML", "CSS"],
       highlights: [
-        "Real-time track search, artist catalog exploration, and playlist retrieval powered by Spotify Web API.",
-        "Seamless OAuth 2.0 authentication flow with secure token refresh and session persistence.",
-        "Dynamic playback controller managing track progression, pause/play, volume, and queue navigation.",
+        "Integration with official Spotify Web API for real-time track search, artist catalog exploration, and playlist retrieval.",
+        "Secure OAuth 2.0 authentication flow managing user permissions, token handling, and session state.",
+        "Interactive playback controller supporting track navigation, play/pause, volume modulation, and queue progression.",
         "5+ core application modules including user profile integration, custom playlist viewing, and reactive state management.",
-        "Responsive, high-fidelity UI engineered for mobile and desktop screens."
+        "Responsive, modern user interface optimized for desktop and mobile displays."
       ],
-      metrics: [
-        { label: "Core Features", val: "5+ Interactive Modules" },
-        { label: "Auth Protocol", val: "OAuth 2.0 PKCE / Token" },
-        { label: "API Integrations", val: "Spotify REST API" },
-        { label: "State Architecture", val: "Centralized React State" }
+      keySpecs: [
+        { label: "Core Modules", val: "5+ Interactive Features" },
+        { label: "Auth Flow", val: "OAuth 2.0 Token Auth" },
+        { label: "API Integration", val: "Spotify Web REST API" },
+        { label: "State Layer", val: "Redux State Management" }
       ],
       architecture: [
-        "Client UI: Component-driven React architecture with custom audio player controls, equalizer animations, and responsive navigation.",
-        "Authentication: OAuth 2.0 handshake handling authorization grant flow, token storage, and proactive refresh.",
-        "API Service Layer: Asynchronous fetch utilities with debounce for search queries and robust error handling.",
-        "State Management: Global state tracking active track, playback status, playback queue, and user context.",
-        "Responsive Design: CSS Flexbox/Grid layouts providing fluid experience across smartphones, tablets, and wide monitors."
+        "UI Layer: Component-driven React application with custom audio player interface and responsive navigation.",
+        "OAuth Integration: Handles authorization redirect, access token retrieval, and token refresh handling.",
+        "API Service Layer: Asynchronous fetch utilities with debounced search query handling and API response caching.",
+        "State Management: Centralized store managing active track state, playback status, user playlists, and auth session."
       ],
       codeUrl: "https://github.com/Jyothinaradam08",
       liveUrl: null
     },
     {
       id: "currency-converter",
-      title: "Full-Stack Real-Time Currency Converter Web Application",
-      shortTitle: "Full-Stack Currency Converter",
+      title: "Real-Time Currency Converter Web Application",
+      shortTitle: "Real-Time Currency Converter",
       category: "web-dev",
       featured: true,
       badge: "Full-Stack & FinTech",
       accentColor: "#0284c7",
-      icon: "dollar-sign",
-      shortDesc: "Interactive full-stack web application delivering instant real-time currency conversions, multi-currency comparisons, and cached exchange rate data across 150+ world currencies.",
-      technologies: ["React.js", "Node.js", "Express.js", "RESTful APIs", "JavaScript (ES6+)", "Exchange Rate API", "Modern CSS"],
+      image: "assets/currency-converter.svg",
+      shortDesc: "Full-stack web application delivering real-time currency conversions, multi-currency support, and optimized backend caching across 150+ world currencies.",
+      technologies: ["React.js", "Node.js", "Express.js", "JavaScript", "RESTful APIs", "HTML", "CSS"],
       highlights: [
-        "Built a full-stack currency exchange platform integrating real-time third-party foreign exchange (Forex) REST APIs.",
-        "Engineered responsive interactive UI featuring instantaneous bidirectional conversion, one-click currency swapping, and quick currency search across 150+ world currencies.",
-        "Implemented backend API layer in Node.js/Express with intelligent in-memory rate caching to avoid rate-limiting and accelerate conversion response times.",
-        "Designed resilient error handling and offline fallback mechanisms to gracefully handle API downtime and connectivity interruptions.",
-        "Delivered dynamic conversion history tracking and multi-currency comparison cards for streamlined cross-currency analysis."
+        "Full-stack currency conversion platform integrating live foreign exchange REST APIs.",
+        "Interactive user interface supporting instant bidirectional conversions, one-click currency swapping, and currency search across 150+ world currencies.",
+        "Node.js and Express.js backend API service with in-memory caching to optimize response latency and prevent external API rate-limiting.",
+        "Robust error handling and validation routines to handle network disconnects and edge cases gracefully.",
+        "Dynamic conversion history tracking and multi-currency comparison cards for streamlined cross-currency analysis."
       ],
-      metrics: [
-        { label: "Supported Currencies", val: "150+ World Fiat" },
-        { label: "Rate Engine", val: "Real-Time REST API" },
-        { label: "Optimization", val: "Cached Fast Latency" },
-        { label: "Architecture", val: "Full-Stack Client-Server" }
+      keySpecs: [
+        { label: "Supported Currencies", val: "150+ World Currencies" },
+        { label: "Exchange Data", val: "Real-Time REST APIs" },
+        { label: "Backend Optimization", val: "In-Memory Rate Caching" },
+        { label: "Architecture", val: "Full-Stack (React + Node.js)" }
       ],
       architecture: [
-        "Frontend Client: Dynamic React interface with real-time input debounce, currency flag integration, quick swap mechanism, and responsive layouts.",
-        "Backend REST Service: Node.js/Express API acting as an intermediary proxy between client requests and foreign exchange provider APIs.",
-        "Rate Caching Engine: Server-side cache storing hourly exchange rates to reduce latency and conserve external API call quotas.",
-        "Resilience & Validation: Strict input sanitization, numeric validation, and fallback rate storage in case of network outages.",
-        "Cross-Currency Calculations: Optimized matrix mathematics for converting any base currency to target currencies seamlessly."
+        "Frontend Client: React interface featuring debounced inputs, quick swap toggle, and real-time conversion feedback.",
+        "Backend Server: Node.js/Express API server acting as proxy to external foreign exchange providers.",
+        "Rate Caching: In-memory cache preserving current exchange rates to reduce latency and conserve external API quotas.",
+        "Calculation Engine: Precise numeric conversion and cross-rate calculation routines."
       ],
       codeUrl: "https://github.com/Jyothinaradam08/fullstack-currency-converter",
       liveUrl: null
@@ -238,9 +259,9 @@ const PORTFOLIO_DATA = {
       status: "Currently Pursuing (M.Tech Scholar)",
       badge: "Premier National Institute (NIT)",
       highlights: [
-        "Maintained top-tier academic performance with CGPA 8.87/10 in Information Technology.",
-        "Advanced specialization in Artificial Intelligence, Multimodal Machine Learning, and Large-Scale Data Systems.",
-        "Engaged in research-oriented implementations in Multimodal Misinformation Detection and NLP algorithms."
+        "Maintained top-tier academic score with CGPA 8.87/10 in Information Technology.",
+        "Specialized focus on Artificial Intelligence, Multimodal Machine Learning, and Natural Language Processing.",
+        "Engaged in technical coursework and implementations in Misinformation Detection and speech-to-text processing."
       ]
     },
     {
@@ -249,19 +270,18 @@ const PORTFOLIO_DATA = {
       location: "Andhra Pradesh, India",
       period: "2020 – 2024",
       grade: "CGPA: 8.60 / 10",
-      status: "Graduated with Distinction",
+      status: "Graduated with First Class with Distinction",
       badge: "B.Tech CSE Graduate",
       highlights: [
-        "Graduated with First Class with Distinction (8.60 CGPA).",
-        "Deep foundation in Data Structures, Algorithms, Operating Systems, Database Management Systems, and Object-Oriented Software Design.",
-        "Led project initiatives in Full-Stack Web Development, REST APIs, and Machine Learning applications."
+        "Graduated with First Class with Distinction (8.60/10 CGPA).",
+        "Deep foundation in Data Structures and Algorithms, Operating Systems, Computer Networks, and DBMS.",
+        "Completed project initiatives in Full-Stack Web Development and Machine Learning applications."
       ]
     }
   ],
 
   contact: {
-    email: "jyopandu2361@gmail.com",
-    phone: "+91 7036872361",
+    email: "pandujyo2361@gmail.com",
     location: "Raipur, Chhattisgarh & Andhra Pradesh, India",
     linkedin: "https://www.linkedin.com/in/naradam-jyothi-lakshmi/",
     github: "https://github.com/Jyothinaradam08"

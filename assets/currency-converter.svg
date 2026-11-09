@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="currBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="currCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.98" />
+    </linearGradient>
+    <filter id="currShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#currBg)" />
+
+  <!-- Geometric currency accents -->
+  <circle cx="120" cy="90" r="80" fill="#38bdf8" opacity="0.1" />
+  <circle cx="700" cy="360" r="120" fill="#60a5fa" opacity="0.12" />
+
+  <!-- Main Mockup Container -->
+  <g transform="translate(60, 40)" filter="url(#currShadow)">
+    <rect width="680" height="370" rx="16" fill="url(#currCard)" stroke="#e2e8f0" stroke-width="1.5" />
+    
+    <!-- Window Header -->
+    <rect width="680" height="46" rx="16" fill="#f1f5f9" />
+    <rect y="32" width="680" height="14" fill="#f1f5f9" />
+    <circle cx="24" cy="23" r="6" fill="#f43f5e" />
+    <circle cx="44" cy="23" r="6" fill="#fbbf24" />
+    <circle cx="64" cy="23" r="6" fill="#10b981" />
+    
+    <!-- Title Pill -->
+    <rect x="220" y="12" width="240" height="22" rx="11" fill="#e2e8f0" />
+    <text x="340" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">currency-converter.fullstack/live</text>
+
+    <!-- Top Banner inside Mockup -->
+    <g transform="translate(30, 65)">
+      <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#0f172a">Currency Converter</text>
+      <text x="215" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#0284c7">Full-Stack Forex &amp; Caching Engine</text>
+
+      <!-- Live Rate Badge -->
+      <g transform="translate(480, 5)">
+        <rect x="0" y="0" width="140" height="24" rx="12" fill="#eff6ff" stroke="#bfdbfe" />
+        <circle cx="14" cy="12" r="4" fill="#3b82f6" />
+        <text x="26" y="16" font-family="sans-serif" font-size="10" font-weight="700" fill="#1d4ed8">150+ Currencies Live</text>
+      </g>
+    </g>
+
+    <!-- Content Columns -->
+    <!-- Left: Converter Widget -->
+    <g transform="translate(30, 115)">
+      <rect width="360" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+      
+      <!-- Input 1: From Currency -->
+      <g transform="translate(20, 20)">
+        <text x="0" y="11" font-family="sans-serif" font-size="10" font-weight="700" fill="#64748b">AMOUNT &amp; FROM</text>
+        <rect y="18" width="320" height="42" rx="8" fill="#f8fafc" stroke="#e2e8f0" />
+        <text x="14" y="44" font-family="sans-serif" font-size="16" font-weight="700" fill="#0f172a">1,000.00</text>
+        <rect x="235" y="24" width="75" height="30" rx="6" fill="#0284c7" />
+        <text x="272" y="44" font-family="sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">USD ($)</text>
+      </g>
+
+      <!-- Swap Icon Indicator -->
+      <g transform="translate(165, 84)">
+        <circle cx="15" cy="15" r="14" fill="#f0f9ff" stroke="#bae6fd" />
+        <path d="M 12 12 L 18 12 M 16 9 L 19 12 L 16 15" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 18 18 L 12 18 M 14 21 L 11 18 L 14 15" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+
+      <!-- Input 2: To Currency -->
+      <g transform="translate(20, 115)">
+        <text x="0" y="11" font-family="sans-serif" font-size="10" font-weight="700" fill="#64748b">CONVERTED TO</text>
+        <rect y="18" width="320" height="42" rx="8" fill="#f0fdf4" stroke="#bbf7d0" />
+        <text x="14" y="44" font-family="sans-serif" font-size="16" font-weight="800" fill="#15803d">83,450.00</text>
+        <rect x="235" y="24" width="75" height="30" rx="6" fill="#16a34a" />
+        <text x="272" y="44" font-family="sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">INR (₹)</text>
+      </g>
+
+      <!-- Rate footer -->
+      <text x="20" y="200" font-family="sans-serif" font-size="10" font-weight="600" fill="#64748b">1 USD = 83.45 INR • Real-time REST Rate API</text>
+    </g>
+
+    <!-- Right: Architecture & In-Memory Caching Card -->
+    <g transform="translate(410, 115)">
+      <rect width="240" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+      <rect width="240" height="34" rx="10" fill="#f8fafc" />
+      <rect y="24" width="240" height="10" fill="#f8fafc" />
+      <text x="16" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#334155">FULL-STACK PIPELINE</text>
+
+      <g transform="translate(16, 48)">
+        <!-- Step 1 -->
+        <g transform="translate(0, 0)">
+          <rect width="208" height="36" rx="6" fill="#f8fafc" stroke="#e2e8f0" />
+          <text x="12" y="17" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f172a">React.js Client</text>
+          <text x="12" y="29" font-family="sans-serif" font-size="9" fill="#64748b">Debounced reactive inputs</text>
+        </g>
+
+        <!-- Step 2 -->
+        <g transform="translate(0, 44)">
+          <rect width="208" height="36" rx="6" fill="#f0f9ff" stroke="#bae6fd" />
+          <text x="12" y="17" font-family="sans-serif" font-size="11" font-weight="700" fill="#0369a1">Node.js Express Proxy</text>
+          <text x="12" y="29" font-family="sans-serif" font-size="9" fill="#0284c7">In-Memory Cache &amp; Rate Limit Shield</text>
+        </g>
+
+        <!-- Step 3 -->
+        <g transform="translate(0, 88)">
+          <rect width="208" height="36" rx="6" fill="#f8fafc" stroke="#e2e8f0" />
+          <text x="12" y="17" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f172a">Forex REST API</text>
+          <text x="12" y="29" font-family="sans-serif" font-size="9" fill="#64748b">Global exchange rate feeds</text>
+        </g>
+
+        <!-- Tech tags -->
+        <g transform="translate(0, 134)">
+          <rect x="0" y="0" width="98" height="20" rx="4" fill="#f1f5f9" />
+          <text x="49" y="14" font-family="sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">REST APIs</text>
+
+          <rect x="106" y="0" width="102" height="20" rx="4" fill="#f1f5f9" />
+          <text x="157" y="14" font-family="sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">Node Caching</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>

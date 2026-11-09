@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spotBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="40%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="spotCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.98" />
+    </linearGradient>
+    <linearGradient id="albumArt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="spotShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#spotBg)" />
+
+  <!-- Subtle glow -->
+  <circle cx="700" cy="80" r="140" fill="#14b8a6" opacity="0.15" />
+  <circle cx="100" cy="380" r="160" fill="#0284c7" opacity="0.15" />
+
+  <!-- Main Mockup Container -->
+  <g transform="translate(60, 40)" filter="url(#spotShadow)">
+    <rect width="680" height="370" rx="16" fill="url(#spotCard)" stroke="#e2e8f0" stroke-width="1.5" />
+    
+    <!-- Window Header -->
+    <rect width="680" height="46" rx="16" fill="#f1f5f9" />
+    <rect y="32" width="680" height="14" fill="#f1f5f9" />
+    <circle cx="24" cy="23" r="6" fill="#f43f5e" />
+    <circle cx="44" cy="23" r="6" fill="#fbbf24" />
+    <circle cx="64" cy="23" r="6" fill="#10b981" />
+    
+    <!-- Title Pill -->
+    <rect x="230" y="12" width="220" height="22" rx="11" fill="#e2e8f0" />
+    <text x="340" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">music-stream.react-app/explore</text>
+
+    <!-- Top Banner -->
+    <g transform="translate(30, 65)">
+      <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#0f172a">Spotify Music Streamer</text>
+      <text x="245" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#0284c7">React.js &amp; Web API Architecture</text>
+
+      <!-- OAuth Status Badge -->
+      <g transform="translate(480, 5)">
+        <rect x="0" y="0" width="140" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0" />
+        <circle cx="14" cy="12" r="4" fill="#10b981" />
+        <text x="26" y="16" font-family="sans-serif" font-size="10" font-weight="700" fill="#065f46">OAuth 2.0 Connected</text>
+      </g>
+    </g>
+
+    <!-- Content Columns -->
+    <!-- Left: Now Playing Card -->
+    <g transform="translate(30, 115)">
+      <rect width="360" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+      
+      <!-- Inner Now Playing Box -->
+      <g transform="translate(20, 20)">
+        <!-- Album Art Mockup -->
+        <rect width="90" height="90" rx="10" fill="url(#albumArt)" />
+        <circle cx="45" cy="45" r="22" fill="#ffffff" opacity="0.25" />
+        <polygon points="41,37 53,45 41,53" fill="#ffffff" />
+
+        <!-- Track Info -->
+        <g transform="translate(110, 15)">
+          <text x="0" y="16" font-family="sans-serif" font-size="15" font-weight="700" fill="#0f172a">Acoustic Ambient Flow</text>
+          <text x="0" y="34" font-family="sans-serif" font-size="12" font-weight="500" fill="#64748b">Featured Artist • Synthwave Collection</text>
+          <rect x="0" y="44" width="75" height="18" rx="4" fill="#f1f5f9" />
+          <text x="37" y="57" font-family="sans-serif" font-size="9" font-weight="700" fill="#0284c7" text-anchor="middle">SPOTIFY API</text>
+        </g>
+      </g>
+
+      <!-- Audio Progress Bar -->
+      <g transform="translate(20, 130)">
+        <rect width="320" height="6" rx="3" fill="#e2e8f0" />
+        <rect width="180" height="6" rx="3" fill="#0284c7" />
+        <circle cx="180" cy="3" r="6" fill="#0369a1" />
+        <text x="0" y="24" font-family="monospace" font-size="10" fill="#64748b">02:14</text>
+        <text x="320" y="24" font-family="monospace" font-size="10" fill="#64748b" text-anchor="end">03:48</text>
+      </g>
+
+      <!-- Player Controls -->
+      <g transform="translate(130, 175)">
+        <!-- Previous -->
+        <circle cx="15" cy="15" r="14" fill="#f1f5f9" />
+        <polygon points="18,10 11,15 18,20" fill="#475569" />
+        <line x1="10" y1="10" x2="10" y2="20" stroke="#475569" stroke-width="2" />
+
+        <!-- Play/Pause -->
+        <circle cx="50" cy="15" r="18" fill="#0284c7" />
+        <polygon points="47,9 57,15 47,21" fill="#ffffff" />
+
+        <!-- Next -->
+        <circle cx="85" cy="15" r="14" fill="#f1f5f9" />
+        <polygon points="82,10 89,15 82,20" fill="#475569" />
+        <line x1="90" y1="10" x2="90" y2="20" stroke="#475569" stroke-width="2" />
+      </g>
+    </g>
+
+    <!-- Right: Playlist & Search Module -->
+    <g transform="translate(410, 115)">
+      <rect width="240" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+      <rect width="240" height="34" rx="10" fill="#f8fafc" />
+      <rect y="24" width="240" height="10" fill="#f8fafc" />
+      <text x="16" y="22" font-family="sans-serif" font-size="11" font-weight="700" fill="#334155">PLAYLISTS &amp; SEARCH</text>
+
+      <g transform="translate(16, 48)">
+        <!-- Search input box -->
+        <rect width="208" height="30" rx="6" fill="#f8fafc" stroke="#e2e8f0" />
+        <text x="12" y="19" font-family="sans-serif" font-size="11" fill="#94a3b8">Search artists or tracks...</text>
+
+        <!-- Playlist Item 1 -->
+        <g transform="translate(0, 42)">
+          <rect width="208" height="34" rx="6" fill="#f0f9ff" stroke="#e0f2fe" />
+          <circle cx="17" cy="17" r="9" fill="#0ea5e9" />
+          <text x="34" y="16" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f172a">Top Weekly Hits</text>
+          <text x="34" y="27" font-family="sans-serif" font-size="9" fill="#64748b">Spotify Catalog • 50 Tracks</text>
+        </g>
+
+        <!-- Playlist Item 2 -->
+        <g transform="translate(0, 84)">
+          <rect width="208" height="34" rx="6" fill="#ffffff" stroke="#f1f5f9" />
+          <circle cx="17" cy="17" r="9" fill="#94a3b8" />
+          <text x="34" y="16" font-family="sans-serif" font-size="11" font-weight="700" fill="#0f172a">Deep Focus Beats</text>
+          <text x="34" y="27" font-family="sans-serif" font-size="9" fill="#64748b">Curated Flow • 32 Tracks</text>
+        </g>
+
+        <!-- Stack tags -->
+        <g transform="translate(0, 130)">
+          <rect x="0" y="0" width="98" height="20" rx="4" fill="#f1f5f9" />
+          <text x="49" y="14" font-family="sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">React Hooks</text>
+
+          <rect x="106" y="0" width="102" height="20" rx="4" fill="#f1f5f9" />
+          <text x="157" y="14" font-family="sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">Redux State</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>
