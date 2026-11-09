@@ -1,35 +1,38 @@
 /* ==========================================================================
    Jyothi Lakshmi Naradam - Portfolio Stylesheet
-   Modern, Responsive, Dark/Light Mode with High-End Glassmorphism & Micro-animations
+   Classy Palette: Obsidian Black, Champagne Gold, Warm Bronze & Platinum
+   Sophisticated, Elegant, Executive-Grade Glassmorphism & High-End Typography
    ========================================================================== */
 
 :root {
-  /* Dark Theme Palette (Default) */
-  --bg-primary: #0a0f1d;
-  --bg-secondary: #0f172a;
-  --bg-card: rgba(17, 24, 39, 0.75);
-  --bg-card-hover: rgba(30, 41, 59, 0.85);
-  --bg-card-border: rgba(255, 255, 255, 0.08);
-  --bg-card-border-hover: rgba(99, 102, 241, 0.4);
+  /* Classy Dark Theme: Obsidian & Champagne Gold */
+  --bg-primary: #0a0b0e;
+  --bg-secondary: #111317;
+  --bg-card: rgba(18, 20, 26, 0.72);
+  --bg-card-hover: rgba(26, 29, 38, 0.88);
+  --bg-card-border: rgba(212, 175, 55, 0.14);
+  --bg-card-border-hover: rgba(212, 175, 55, 0.5);
   
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-primary: #fbfbfd;
+  --text-secondary: #9da4b4;
+  --text-muted: #676d7c;
   
-  --accent-primary: #6366f1;
-  --accent-secondary: #8b5cf6;
-  --accent-cyan: #06b6d4;
-  --accent-emerald: #10b981;
-  --accent-amber: #f59e0b;
+  --accent-primary: #d4af37;        /* Champagne Gold */
+  --accent-light: #f5dc94;          /* Soft Pale Gold Shimmer */
+  --accent-dark: #aa821c;           /* Antique Rich Gold */
+  --accent-bronze: #b38753;         /* Warm Bronze */
+  --accent-emerald: #10b981;        /* Refined Emerald */
+  --accent-platinum: #e2e4e9;       /* Platinum Off-White */
   
-  --gradient-brand: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #38bdf8 100%);
-  --gradient-glow: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15), transparent 70%);
-  --glow-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3);
-  --card-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --gradient-brand: linear-gradient(135deg, #fff2cc 0%, #e8c66e 35%, #d4af37 65%, #aa821c 100%);
+  --gradient-gold-btn: linear-gradient(135deg, #e5c365 0%, #d4af37 50%, #b8861d 100%);
+  --gradient-glow: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.12), transparent 70%);
+  --glow-shadow: 0 10px 30px -8px rgba(212, 175, 55, 0.22);
+  --card-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.65), 0 8px 12px -6px rgba(0, 0, 0, 0.5);
   
-  --nav-bg: rgba(10, 15, 29, 0.85);
-  --nav-border: rgba(255, 255, 255, 0.06);
-  --code-bg: rgba(15, 23, 42, 0.8);
+  --nav-bg: rgba(10, 11, 14, 0.88);
+  --nav-border: rgba(212, 175, 55, 0.12);
+  --code-bg: rgba(14, 16, 21, 0.85);
   
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -37,21 +40,29 @@
 }
 
 [data-theme="light"] {
-  --bg-primary: #f8fafc;
-  --bg-secondary: #f1f5f9;
-  --bg-card: rgba(255, 255, 255, 0.85);
+  /* Classy Light Theme: Warm Alabaster, Antique Gold, Deep Charcoal */
+  --bg-primary: #faf8f5;
+  --bg-secondary: #f2ede4;
+  --bg-card: rgba(255, 255, 255, 0.92);
   --bg-card-hover: rgba(255, 255, 255, 0.98);
-  --bg-card-border: rgba(226, 232, 240, 0.9);
-  --bg-card-border-hover: rgba(99, 102, 241, 0.5);
+  --bg-card-border: rgba(184, 142, 45, 0.24);
+  --bg-card-border-hover: rgba(184, 142, 45, 0.58);
   
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-primary: #15171c;
+  --text-secondary: #4a4f5a;
+  --text-muted: #818796;
   
-  --nav-bg: rgba(248, 250, 252, 0.9);
-  --nav-border: rgba(226, 232, 240, 0.8);
-  --code-bg: rgba(241, 245, 249, 0.95);
+  --accent-primary: #9e7518;
+  --accent-light: #b88e28;
+  --accent-dark: #7a580e;
+  --gradient-brand: linear-gradient(135deg, #15171c 0%, #7a580e 50%, #b88e28 100%);
+  --gradient-gold-btn: linear-gradient(135deg, #c59b27 0%, #aa821c 100%);
+  
+  --nav-bg: rgba(250, 248, 245, 0.92);
+  --nav-border: rgba(184, 142, 45, 0.2);
+  --code-bg: rgba(244, 240, 234, 0.95);
   --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  --glow-shadow: 0 10px 25px -8px rgba(184, 142, 45, 0.18);
 }
 
 /* Base Styles */
@@ -73,13 +84,13 @@ body {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(99, 102, 241, 0.35);
+  background: rgba(212, 175, 55, 0.3);
   border-radius: 9999px;
   border: 2px solid var(--bg-primary);
 }
@@ -90,8 +101,8 @@ body {
 /* Glassmorphism Card Utility */
 .glass-card {
   background: var(--bg-card);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--bg-card-border);
   box-shadow: var(--card-shadow);
   transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal), background var(--transition-normal);
@@ -110,57 +121,57 @@ body {
   display: inline-block;
 }
 
-/* Ambient Background Glow Orbs */
+/* Ambient Background Warm Glow Orbs */
 .bg-glow-orb-1 {
   position: absolute;
   top: -80px;
-  left: 20%;
-  width: 550px;
-  height: 550px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.16) 0%, transparent 70%);
-  filter: blur(60px);
+  left: 25%;
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  filter: blur(75px);
   pointer-events: none;
   z-index: 0;
-  animation: pulse-slow 8s infinite alternate ease-in-out;
+  animation: pulse-slow 9s infinite alternate ease-in-out;
 }
 
 .bg-glow-orb-2 {
   position: absolute;
-  top: 600px;
+  top: 700px;
   right: 5%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
-  filter: blur(70px);
+  width: 620px;
+  height: 620px;
+  background: radial-gradient(circle, rgba(179, 135, 83, 0.07) 0%, transparent 70%);
+  filter: blur(80px);
   pointer-events: none;
   z-index: 0;
-  animation: pulse-slow 10s infinite alternate-reverse ease-in-out;
+  animation: pulse-slow 11s infinite alternate-reverse ease-in-out;
 }
 
 .bg-glow-orb-3 {
   position: absolute;
-  top: 1700px;
-  left: 10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
-  filter: blur(60px);
+  top: 1800px;
+  left: 8%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+  filter: blur(75px);
   pointer-events: none;
   z-index: 0;
 }
 
 @keyframes pulse-slow {
   0% { transform: translateY(0) scale(1); opacity: 0.6; }
-  100% { transform: translateY(35px) scale(1.1); opacity: 0.95; }
+  100% { transform: translateY(30px) scale(1.08); opacity: 0.95; }
 }
 
 /* Pulsing Online Indicator */
 .status-pulse {
   display: inline-block;
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background-color: #10b981;
+  background-color: var(--accent-emerald);
   position: relative;
 }
 .status-pulse::after {
@@ -168,7 +179,7 @@ body {
   position: absolute;
   inset: -3px;
   border-radius: 50%;
-  background-color: rgba(16, 185, 129, 0.5);
+  background-color: rgba(16, 185, 129, 0.45);
   animation: pulse-ring 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
 }
 
@@ -220,6 +231,21 @@ body {
   font-weight: 600;
 }
 
+/* Classy Button Styles */
+.btn-gold {
+  background: var(--gradient-gold-btn);
+  color: #0b0c10;
+  font-weight: 600;
+  box-shadow: 0 4px 18px 0 rgba(212, 175, 55, 0.28);
+  transition: all var(--transition-normal);
+}
+
+.btn-gold:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px 0 rgba(212, 175, 55, 0.4);
+  filter: brightness(1.05);
+}
+
 /* Tech Pill Badges */
 .tech-pill {
   display: inline-flex;
@@ -229,22 +255,22 @@ body {
   border-radius: 9999px;
   font-size: 0.815rem;
   font-weight: 500;
-  background: rgba(99, 102, 241, 0.08);
+  background: rgba(212, 175, 55, 0.06);
   color: var(--text-primary);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.18);
   transition: all var(--transition-fast);
 }
 
 .tech-pill:hover {
-  background: rgba(99, 102, 241, 0.2);
-  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.45);
   transform: translateY(-1px);
 }
 
 /* Project Card Specifics */
 .project-card {
   position: relative;
-  border-radius: 1rem;
+  border-radius: 1.15rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -279,19 +305,20 @@ body {
 }
 
 .filter-btn.active {
-  background: var(--accent-primary);
-  color: #ffffff;
-  border-color: var(--accent-primary);
-  box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.39);
+  background: var(--gradient-gold-btn);
+  color: #0b0c10;
+  font-weight: 600;
+  border-color: transparent;
+  box-shadow: 0 4px 16px 0 rgba(212, 175, 55, 0.3);
 }
 
 /* Modal styling */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(7, 8, 11, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -315,7 +342,7 @@ body {
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85);
   transform: scale(0.95) translateY(15px);
   transition: transform var(--transition-normal);
 }

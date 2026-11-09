@@ -1,4 +1,5 @@
 // Main Interactive JavaScript for Jyothi Lakshmi Naradam's Portfolio
+// Classy Palette: Obsidian Black, Champagne Gold, Warm Bronze & Platinum
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
@@ -41,13 +42,13 @@ function updateThemeIcon(theme, iconEl) {
   if (!iconEl) return;
   if (theme === 'light') {
     iconEl.innerHTML = `
-      <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
       </svg>
     `;
   } else {
     iconEl.innerHTML = `
-      <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
       </svg>
     `;
@@ -66,7 +67,7 @@ function initTypewriter() {
     "M.Tech Scholar @ NIT Raipur (8.87 CGPA)",
     "Multimodal AI & NLP Specialist",
     "Full-Stack Web Developer",
-    "Data-Driven Problem Solver"
+    "Intelligent Systems Builder"
   ];
 
   let wordIndex = 0;
@@ -112,7 +113,7 @@ function renderStats() {
   if (!container || !PORTFOLIO_DATA.personal.stats) return;
 
   container.innerHTML = PORTFOLIO_DATA.personal.stats.map(stat => `
-    <div class="glass-card p-4 rounded-xl text-center border border-white/5 hover:border-indigo-500/40 transition">
+    <div class="glass-card p-4 rounded-xl text-center border border-amber-500/10 hover:border-amber-500/40 transition">
       <div class="text-2xl sm:text-3xl font-extrabold text-gradient mb-0.5">
         ${stat.value}<span class="text-xs sm:text-sm font-semibold opacity-80">${stat.suffix}</span>
       </div>
@@ -130,9 +131,9 @@ function renderSkills() {
   if (!container || !PORTFOLIO_DATA.skills.categories) return;
 
   const iconSvgMap = {
-    brain: `<svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`,
-    layout: `<svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>`,
-    code: `<svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>`,
+    brain: `<svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`,
+    layout: `<svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>`,
+    code: `<svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>`,
     terminal: `<svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>`
   };
 
@@ -140,7 +141,7 @@ function renderSkills() {
     <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
       <div>
         <div class="flex items-center gap-3.5 mb-4">
-          <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/60">
+          <div class="p-2.5 rounded-xl bg-stone-900/90 border border-amber-500/20">
             ${iconSvgMap[category.icon] || iconSvgMap['code']}
           </div>
           <div>
@@ -152,9 +153,9 @@ function renderSkills() {
         <div class="flex flex-wrap gap-2 pt-2">
           ${category.skills.map(sk => `
             <div class="tech-pill group cursor-default" title="${sk.badge} • ${sk.level}">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 group-hover:scale-125 transition-transform"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-400 group-hover:scale-125 transition-transform"></span>
               <span class="font-medium">${sk.name}</span>
-              <span class="text-[10px] opacity-70 px-1 py-0.2 rounded bg-white/5 border border-white/5">${sk.badge}</span>
+              <span class="text-[10px] opacity-75 px-1 py-0.2 rounded bg-amber-500/10 border border-amber-500/20 text-amber-200/90">${sk.badge}</span>
             </div>
           `).join('')}
         </div>
@@ -182,8 +183,8 @@ function renderProjects() {
       <!-- Card Header with Badges -->
       <div class="project-header">
         <div class="flex items-center justify-between gap-2 mb-3">
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-            <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+          <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/25">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
             ${proj.badge}
           </span>
           <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">
@@ -191,7 +192,7 @@ function renderProjects() {
           </span>
         </div>
 
-        <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors leading-snug">
+        <h3 class="text-xl font-bold text-slate-100 group-hover:text-amber-300 transition-colors leading-snug">
           ${proj.title}
         </h3>
         
@@ -205,8 +206,8 @@ function renderProjects() {
         <div class="space-y-3">
           <div class="grid grid-cols-2 gap-2 text-xs">
             ${proj.metrics.slice(0, 2).map(m => `
-              <div class="p-2.5 rounded-lg bg-slate-900/40 border border-slate-800">
-                <span class="text-slate-400 block text-[10px] uppercase font-bold tracking-wider">${m.label}</span>
+              <div class="p-2.5 rounded-lg bg-stone-900/60 border border-amber-500/15">
+                <span class="text-amber-300/80 block text-[10px] uppercase font-bold tracking-wider">${m.label}</span>
                 <span class="text-slate-200 font-semibold text-xs mt-0.5 block">${m.val}</span>
               </div>
             `).join('')}
@@ -215,7 +216,7 @@ function renderProjects() {
           <ul class="space-y-1.5 text-xs text-slate-300">
             ${proj.highlights.slice(0, 3).map(h => `
               <li class="flex items-start gap-2">
-                <svg class="w-3.5 h-3.5 text-indigo-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-3.5 h-3.5 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span>${h}</span>
@@ -228,12 +229,12 @@ function renderProjects() {
         <div class="mt-5 pt-4 border-t border-slate-800/80">
           <div class="flex flex-wrap gap-1.5 mb-5">
             ${proj.technologies.slice(0, 6).map(t => `
-              <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800/70 text-slate-300 border border-slate-700/50">
+              <span class="text-[11px] px-2 py-0.5 rounded bg-stone-900/80 text-amber-100/90 border border-amber-500/20 font-medium">
                 ${t}
               </span>
             `).join('')}
             ${proj.technologies.length > 6 ? `
-              <span class="text-[11px] px-2 py-0.5 rounded bg-indigo-950/60 text-indigo-300 border border-indigo-800/50 font-medium">
+              <span class="text-[11px] px-2 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/40 font-medium">
                 +${proj.technologies.length - 6} more
               </span>
             ` : ''}
@@ -241,13 +242,13 @@ function renderProjects() {
 
           <!-- Action Buttons -->
           <div class="flex items-center gap-3">
-            <button onclick="openProjectModal('${proj.id}')" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs tracking-wide transition shadow-lg shadow-indigo-600/25">
+            <button onclick="openProjectModal('${proj.id}')" class="flex-1 btn-gold inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs tracking-wide transition">
               <span>Deep Dive Architecture</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
-            <a href="${proj.codeUrl}" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition" title="View Source Repository">
+            <a href="${proj.codeUrl}" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-stone-900/90 hover:bg-stone-800 text-amber-300 hover:text-white border border-amber-500/20 transition" title="View Source Repository">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
               </svg>
@@ -347,9 +348,9 @@ window.openProjectModal = function(projectId) {
 
   contentContainer.innerHTML = `
     <!-- Modal Header -->
-    <div class="p-6 sm:p-8 border-b border-slate-800">
+    <div class="p-6 sm:p-8 border-b border-amber-500/20">
       <div class="flex items-center gap-2 mb-2">
-        <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+        <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">
           ${proj.badge}
         </span>
         <span class="text-xs font-mono text-slate-400">
@@ -369,11 +370,11 @@ window.openProjectModal = function(projectId) {
       
       <!-- Key Metrics Row -->
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-3">Key Project Metrics & Specifications</h4>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-3">Key Project Metrics & Specifications</h4>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
           ${proj.metrics.map(m => `
-            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-center">
-              <span class="block text-[11px] font-medium text-slate-400 uppercase tracking-wider">${m.label}</span>
+            <div class="p-3 rounded-xl bg-stone-900/60 border border-amber-500/20 text-center">
+              <span class="block text-[11px] font-medium text-amber-300/80 uppercase tracking-wider">${m.label}</span>
               <span class="block text-sm font-bold text-slate-100 mt-1">${m.val}</span>
             </div>
           `).join('')}
@@ -382,11 +383,11 @@ window.openProjectModal = function(projectId) {
 
       <!-- Architectural Breakdown -->
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-3">System Architecture & Engineering Highlights</h4>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-3">System Architecture & Engineering Highlights</h4>
         <div class="space-y-2.5">
           ${proj.architecture.map(step => `
-            <div class="p-3.5 rounded-xl bg-slate-900/40 border border-slate-800/80 flex items-start gap-3">
-              <div class="p-1.5 rounded-lg bg-indigo-600/20 text-indigo-400 mt-0.5">
+            <div class="p-3.5 rounded-xl bg-stone-900/50 border border-amber-500/15 flex items-start gap-3">
+              <div class="p-1.5 rounded-lg bg-amber-500/15 text-amber-400 mt-0.5">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -399,7 +400,7 @@ window.openProjectModal = function(projectId) {
 
       <!-- Resume Verified Accomplishments -->
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-3">Delivered Features & Technical Implementation</h4>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-3">Delivered Features & Technical Implementation</h4>
         <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
           ${proj.highlights.map(h => `
             <li class="flex items-start gap-2.5">
@@ -414,11 +415,11 @@ window.openProjectModal = function(projectId) {
 
       <!-- Tech Stack Badges -->
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-2.5">Technologies Used</h4>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-2.5">Technologies Used</h4>
         <div class="flex flex-wrap gap-2">
           ${proj.technologies.map(t => `
             <span class="tech-pill">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
               ${t}
             </span>
           `).join('')}
@@ -426,8 +427,8 @@ window.openProjectModal = function(projectId) {
       </div>
 
       <!-- Modal Footer CTAs -->
-      <div class="pt-6 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4">
-        <a href="${proj.codeUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs tracking-wide transition shadow-lg shadow-indigo-600/30">
+      <div class="pt-6 border-t border-amber-500/20 flex flex-wrap items-center justify-between gap-4">
+        <a href="${proj.codeUrl}" target="_blank" rel="noopener noreferrer" class="btn-gold inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs tracking-wide transition">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
           <span>View Source on GitHub</span>
         </a>
@@ -476,13 +477,13 @@ function showToast(message) {
   if (!toast) {
     toast = document.createElement('div');
     toast.id = 'portfolio-toast';
-    toast.className = 'fixed bottom-6 right-6 z-50 px-5 py-3 rounded-xl bg-indigo-600 text-white font-medium text-xs shadow-2xl flex items-center gap-2.5 transition-all transform duration-300 opacity-0 translate-y-4';
+    toast.className = 'fixed bottom-6 right-6 z-50 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 text-stone-950 font-bold text-xs shadow-2xl border border-amber-300/40 flex items-center gap-2.5 transition-all transform duration-300 opacity-0 translate-y-4';
     document.body.appendChild(toast);
   }
 
   toast.innerHTML = `
-    <svg class="w-4 h-4 text-emerald-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    <svg class="w-4 h-4 text-stone-950 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
     </svg>
     <span>${message}</span>
   `;

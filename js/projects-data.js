@@ -1,4 +1,5 @@
 // Structured data for Jyothi Lakshmi Naradam's Portfolio
+// Classy Palette: Obsidian Black, Champagne Gold, Warm Bronze & Platinum
 
 const PORTFOLIO_DATA = {
   personal: {
@@ -16,7 +17,7 @@ const PORTFOLIO_DATA = {
       { label: "M.Tech CGPA", value: "8.87", suffix: "/10", sub: "NIT Raipur" },
       { label: "B.Tech CGPA", value: "8.60", suffix: "/10", sub: "JNTUA College of Eng." },
       { label: "Core Projects", value: "3+", suffix: "", sub: "Multimodal AI & Full-Stack" },
-      { label: "Multilingual Support", value: "3", suffix: " Langs", sub: "English, Hindi, Telugu" }
+      { label: "Multilingual Pipeline", value: "3", suffix: " Langs", sub: "English, Hindi, Telugu" }
     ]
   },
 
@@ -95,9 +96,8 @@ const PORTFOLIO_DATA = {
       shortTitle: "VeriSense AI: Multimodal Fact Verification",
       category: "ai-ml",
       featured: true,
-      badge: "Featured AI Project",
-      gradient: "from-purple-600 via-indigo-600 to-blue-600",
-      accentColor: "#6366f1",
+      badge: "Premier AI Project",
+      accentColor: "#d4af37",
       icon: "shield-alert",
       shortDesc: "End-to-end full-stack platform detecting misinformation across Text, Audio, and Video in English, Hindi, and Telugu with explainable AI verdicts.",
       technologies: ["React.js", "Node.js", "Python", "Flask", "OpenAI Whisper", "FFmpeg", "NLP", "Scikit-Learn", "TF-IDF"],
@@ -130,9 +130,8 @@ const PORTFOLIO_DATA = {
       shortTitle: "AI Resume Screening & Recommendation",
       category: "ai-ml",
       featured: true,
-      badge: "AI & HR Tech",
-      gradient: "from-blue-600 via-teal-600 to-emerald-600",
-      accentColor: "#0ea5e9",
+      badge: "AI & Talent Analytics",
+      accentColor: "#c59b27",
       icon: "file-search",
       shortDesc: "Intelligent NLP system parsing resumes, benchmarking candidate skills against job profiles, and delivering targeted upskilling roadmaps.",
       technologies: ["Python", "NLP", "Streamlit", "Machine Learning", "MySQL", "Scikit-learn", "PDF/DOCX Parsing"],
@@ -166,8 +165,7 @@ const PORTFOLIO_DATA = {
       category: "web-dev",
       featured: true,
       badge: "Full-Stack Web & API",
-      gradient: "from-emerald-600 via-green-600 to-teal-600",
-      accentColor: "#10b981",
+      accentColor: "#b38753",
       icon: "music",
       shortDesc: "Feature-rich, high-performance music streaming application integrating Spotify Web API with OAuth 2.0 user authentication and real-time playback.",
       technologies: ["React.js", "Spotify Web API", "JavaScript (ES6+)", "RESTful APIs", "OAuth 2.0", "Redux", "Modern CSS"],
