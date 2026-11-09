@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#312e81" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" rx="40" fill="#0b0f19" />
+  <circle cx="200" cy="200" r="180" fill="url(#auraGlow)" />
+
+  <!-- Geometric Tech Grid Rings -->
+  <circle cx="200" cy="200" r="145" fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6" />
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#06b6d4" stroke-width="1" stroke-dasharray="3,9" opacity="0.4" />
+
+  <!-- Inner Badge Halo -->
+  <circle cx="200" cy="180" r="95" fill="url(#bgGrad)" filter="url(#glowEffect)" />
+  <circle cx="200" cy="180" r="90" fill="#0f172a" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+
+  <!-- Stylized Monogram / Tech Icon -->
+  <g transform="translate(145, 125)">
+    <!-- Neural Node Constellations -->
+    <path d="M 55,20 L 25,65 L 85,65 Z" fill="none" stroke="#818cf8" stroke-width="2.5" opacity="0.7" />
+    <circle cx="55" cy="20" r="5" fill="#38bdf8" />
+    <circle cx="25" cy="65" r="5" fill="#a855f7" />
+    <circle cx="85" cy="65" r="5" fill="#818cf8" />
+    
+    <!-- Core Initials JLN -->
+    <text x="55" y="85" font-family="'Inter', system-ui, sans-serif" font-weight="900" font-size="28" fill="#ffffff" text-anchor="middle" letter-spacing="3">JLN</text>
+  </g>
+
+  <!-- Lower Tech Ribbon -->
+  <rect x="75" y="305" width="250" height="42" rx="21" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" />
+  <text x="200" y="331" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="13" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">NIT RAIPUR • AI / ML</text>
+
+  <!-- Sparkles -->
+  <polygon points="320,80 324,90 334,94 324,98 320,108 316,98 306,94 316,90" fill="#38bdf8" opacity="0.8" />
+  <polygon points="80,240 83,248 91,251 83,254 80,262 77,254 69,251 77,248" fill="#c084fc" opacity="0.7" />
+</svg>
