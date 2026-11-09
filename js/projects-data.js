@@ -33,7 +33,7 @@ const PORTFOLIO_DATA = {
     ]
   },
 
-  // M.Tech Thesis & Research
+  // Distinct Section 1: M.Tech Thesis & Research
   thesis: {
     title: "GPF-HCT: Targeted Graph-Preserving Feature Fusion in a Hybrid CNN–Transformer for Leukemia Cell Classification",
     shortTitle: "GPF-HCT: Hybrid CNN–Transformer for Leukemia Cell Classification",
@@ -42,35 +42,35 @@ const PORTFOLIO_DATA = {
     manuscriptNote: "Manuscript prepared for submission to International Journal of Information Technology (Springer)",
     dataset: "C-NMC 2019 Microscopic Blood-Cell Benchmark Dataset",
     image: "assets/gpf-hct-architecture.svg",
-    summary: "Research focused on automated Acute Lymphoblastic Leukemia (ALL) cell classification from microscopic blood-cell images. It introduces GPF-HCT, a hybrid architecture combining Convolutional Neural Networks (CNNs) for fine local morphological feature extraction with Vision Transformers (ViT) for global contextual representations, unified through Graph-Preserving Feature Fusion.",
+    summary: "Rigorous postgraduate research developing GPF-HCT, an automated classification architecture for detecting Acute Lymphoblastic Leukemia (ALL) from microscopic blood-cell images. The system unites multiscale Convolutional Neural Networks (CNNs) for extracting fine localized cytological morphologies with Vision Transformers (ViT) for capturing long-range global contextual dependencies, synthesized via a targeted Graph-Preserving Feature Fusion mechanism.",
     highlights: [
       {
-        title: "Graph-Preserving Feature Fusion",
-        desc: "Models structural topological relational graphs to preserve cross-modal feature geometry between CNN local embeddings and Transformer global tokens."
+        title: "Graph-Preserving Feature Fusion (GPF)",
+        desc: "Constructs structural topological relational graphs to preserve cross-modal geometric affinities and spatial dependencies between convolutional feature maps and transformer patch tokens."
       },
       {
         title: "Hybrid CNN–Transformer Architecture",
-        desc: "Unifies convolutional inductive biases with self-attention mechanisms to simultaneously learn localized cellular details and long-range semantic patterns."
+        desc: "Synthesizes inductive spatial biases from deep convolutional backbones with multi-head self-attention mechanisms to simultaneously learn micro-cellular textures and macro-contextual representations."
       },
       {
-        title: "Local Morphological & Global Contextual Extraction",
-        desc: "Extracts fine cytological features including cell boundaries and cytoplasm texture while modeling global inter-patch relationships."
+        title: "Local Morphological & Global Contextual Feature Extraction",
+        desc: "Simultaneously isolates high-frequency morphological features (nuclear contours, chromatin texture, cytoplasmic irregularities) and global inter-patch semantic attention."
       },
       {
         title: "Architectural Optimization",
-        desc: "Balanced network parameterization designed for computational efficiency and robust representation learning on high-resolution medical imagery."
+        desc: "Engineered balanced channel dimensions and token projections to achieve high parameter efficiency and stable gradient dynamics during clinical image modeling."
       },
       {
         title: "Controlled Ablation Studies",
-        desc: "Systematic modular ablation validating the distinct contribution of graph fusion, multi-scale CNN backbones, and attention heads."
+        desc: "Conducted systematic modular ablation experiments across isolated components—including graph topology preservation, convolutional depth, and attention heads—to validate architectural necessity."
       },
       {
         title: "Multi-Seed Ensemble Learning",
-        desc: "Evaluates stability across randomized seeds to minimize stochastic initialization variance and enhance out-of-sample generalization."
+        desc: "Combines diverse multi-seed training checkpoints to eliminate stochastic initialization bias, stabilize model variance, and enhance cross-patient generalization."
       },
       {
         title: "Validation-Based Threshold Calibration",
-        desc: "Empirically calibrates decision threshold boundaries on validation distributions to prioritize clinically reliable classification verdicts."
+        desc: "Empirically calibrates decision threshold boundaries on reserved validation splits to ensure clinically safe, dependable binary classification between leukemic blasts and normal cells."
       }
     ],
     technologies: [
@@ -85,6 +85,7 @@ const PORTFOLIO_DATA = {
     ]
   },
 
+  // Distinct Section 2: Research Interests & AI Specializations
   researchInterests: [
     {
       title: "Multimodal AI",
@@ -205,7 +206,7 @@ const PORTFOLIO_DATA = {
         "ML Inference Service: Python Flask microservice evaluating text using TF-IDF feature extractors and trained classifiers.",
         "Explainability Layer: Computes prediction probabilities and highlights influential tokens driving the classification verdict."
       ],
-      codeUrl: "https://github.com/Jyothinaradam08",
+      codeUrl: "https://github.com/Jyothinaradam08/VeriSense-AI-AI-Powered-Multilingual-Multimodal-Misinformation-Detection-Platform",
       liveUrl: null
     },
     {
@@ -240,7 +241,7 @@ const PORTFOLIO_DATA = {
         "Streamlit Dashboard: Interactive user interface displaying candidate rankings, score distributions, and gap analysis.",
         "Data Storage: MySQL database schema recording parsed applicant metadata and evaluation histories."
       ],
-      codeUrl: "https://github.com/Jyothinaradam08",
+      codeUrl: "https://github.com/Jyothinaradam08/Smart_Resume_Analyser_App",
       liveUrl: null
     },
     {
@@ -274,7 +275,7 @@ const PORTFOLIO_DATA = {
         "API Service Layer: Asynchronous fetch utilities with debounced search query handling and API response caching.",
         "State Management: Centralized store managing active track state, playback status, user playlists, and auth session."
       ],
-      codeUrl: "https://github.com/Jyothinaradam08",
+      codeUrl: "https://github.com/Jyothinaradam08/Music-Player-using-React.js-and-Spotify-API",
       liveUrl: null
     },
     {
