@@ -98,13 +98,6 @@
 
       <!-- Right Utility Controls -->
       <div class="flex items-center gap-3">
-        
-        <!-- LinkedIn Add Guide Helper Button -->
-        <button id="linkedin-guide-btn" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 hover:bg-sky-100 text-sky-700 border border-sky-200 text-xs font-semibold transition" title="Instructions to link in LinkedIn">
-          <svg class="w-3.5 h-3.5 text-sky-600" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          <span>LinkedIn Ready</span>
-        </button>
-
         <!-- Theme Toggle (Light / Dark) -->
         <button id="theme-toggle" aria-label="Toggle Theme" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-200 transition">
           <span id="theme-icon">
@@ -286,33 +279,6 @@
         <!-- Rendered via JS -->
       </div>
 
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       LINKEDIN PROFILE SHOWCASE BANNER
-       ========================================================================== -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-    <div class="glass-card rounded-2xl p-6 sm:p-7 border border-sky-200 bg-gradient-to-r from-sky-50 via-white to-sky-50 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
-      <div class="flex items-start gap-4">
-        <div class="p-3 rounded-xl bg-sky-100 text-sky-700 border border-sky-200 flex-shrink-0">
-          <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-        </div>
-        <div>
-          <h3 class="text-base sm:text-lg font-bold text-slate-900 flex items-center gap-2">
-            Add This Portfolio to Your LinkedIn Profile in 2 Minutes!
-            <span class="text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-800 px-2 py-0.5 rounded-full border border-sky-200">Guide Included</span>
-          </h3>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
-            Enhance recruiter discovery! Feature your live portfolio link in your LinkedIn <strong>Contact Info (Website)</strong> and <strong>Featured Section</strong> to showcase your NIT Raipur M.Tech record and ML projects.
-          </p>
-        </div>
-      </div>
-      <div class="flex items-center gap-3 flex-shrink-0 w-full md:w-auto">
-        <button onclick="document.getElementById('linkedin-guide-modal').classList.add('active'); document.body.style.overflow='hidden';" class="btn-skyblue w-full md:w-auto px-5 py-2.5 rounded-xl text-xs tracking-wide transition">
-          View LinkedIn Setup Guide
-        </button>
-      </div>
     </div>
   </section>
 
@@ -694,77 +660,7 @@
     </div>
   </div>
 
-  <!-- 2. LinkedIn Integration Guide Modal -->
-  <div id="linkedin-guide-modal" class="modal-overlay">
-    <div class="modal-container relative max-w-2xl bg-white">
-      <button id="linkedin-modal-close-btn" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 transition z-10 border border-slate-200" aria-label="Close Modal">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-
-      <div class="p-6 sm:p-8">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="p-3 rounded-xl bg-sky-100 text-sky-700 border border-sky-200">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-slate-900">How to Add This Portfolio to LinkedIn</h3>
-            <p class="text-xs text-sky-700 font-semibold">3 High-Impact locations to get 5x more recruiter responses</p>
-          </div>
-        </div>
-
-        <div class="space-y-4 text-xs sm:text-sm text-slate-700">
-          
-          <div class="p-4 rounded-xl bg-sky-50/70 border border-sky-200 space-y-1.5">
-            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-              <span class="w-5 h-5 rounded-full bg-sky-600 text-white text-xs flex items-center justify-center font-bold">1</span>
-              Add to Profile Intro as Custom Link (Top of Profile)
-            </h4>
-            <p class="text-slate-600 text-xs">
-              Go to your LinkedIn Profile &gt; Click the <strong>Edit (Pencil)</strong> icon on your intro card &gt; Scroll down to <strong>Custom link</strong> &gt; Enter your portfolio URL and set the Link Text to:
-            </p>
-            <div class="p-2 rounded bg-white font-mono text-xs text-sky-700 select-all border border-sky-200 font-semibold">
-              👉 View AI & Full-Stack Portfolio (NIT Raipur)
-            </div>
-          </div>
-
-          <div class="p-4 rounded-xl bg-sky-50/70 border border-sky-200 space-y-1.5">
-            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-              <span class="w-5 h-5 rounded-full bg-sky-600 text-white text-xs flex items-center justify-center font-bold">2</span>
-              Add to the "Featured" Section
-            </h4>
-            <p class="text-slate-600 text-xs">
-              Click <strong>Add profile section</strong> &gt; <strong>Recommended</strong> &gt; <strong>Add Featured</strong> &gt; Click <strong>+ (Add Link)</strong> &gt; Paste your portfolio URL.
-            </p>
-            <p class="text-slate-600 text-xs">Recommended Title & Description:</p>
-            <div class="p-2.5 rounded bg-white font-mono text-xs text-slate-700 space-y-1 border border-sky-200">
-              <div class="text-sky-700 font-bold">Title: Interactive Portfolio | Jyothi Lakshmi Naradam</div>
-              <div class="text-slate-600 text-[11px]">Description: Multimodal AI (VeriSense AI), NLP Resume Recommendation, Spotify Web App, and M.Tech IT (8.87 CGPA) at NIT Raipur.</div>
-            </div>
-          </div>
-
-          <div class="p-4 rounded-xl bg-sky-50/70 border border-sky-200 space-y-1.5">
-            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-              <span class="w-5 h-5 rounded-full bg-sky-600 text-white text-xs flex items-center justify-center font-bold">3</span>
-              Update Headline for Maximum Visibility
-            </h4>
-            <p class="text-slate-600 text-xs">Paste this high-converting headline into your LinkedIn Profile:</p>
-            <div class="p-2 rounded bg-white font-mono text-xs text-emerald-700 select-all border border-sky-200 font-semibold">
-              M.Tech IT Scholar @ NIT Raipur | AI/ML & NLP Engineer | Full-Stack Developer | PyTorch • Whisper • React.js
-            </div>
-          </div>
-
-        </div>
-
-        <div class="mt-6 pt-4 border-t border-slate-200 flex justify-end">
-          <button onclick="document.getElementById('linkedin-guide-modal').classList.remove('active'); document.body.style.overflow='';" class="btn-skyblue px-5 py-2.5 rounded-xl text-xs">
-            Got it, thanks!
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. Full Resume View Modal -->
+  <!-- 2. Full Resume View Modal -->
   <div id="resume-modal" class="modal-overlay">
     <div class="modal-container relative max-w-3xl bg-white">
       <button id="resume-modal-close-btn" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 transition z-10 border border-slate-200" aria-label="Close Modal">

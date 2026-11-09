@@ -289,21 +289,6 @@ function initModals() {
     });
   }
 
-  // LinkedIn Helper Modal
-  const linkedinHelperBtn = document.getElementById('linkedin-guide-btn');
-  const linkedinModal = document.getElementById('linkedin-guide-modal');
-  const closeLinkedinBtn = document.getElementById('linkedin-modal-close-btn');
-
-  if (linkedinHelperBtn && linkedinModal) {
-    linkedinHelperBtn.addEventListener('click', () => openModal(linkedinModal));
-  }
-  if (closeLinkedinBtn && linkedinModal) {
-    closeLinkedinBtn.addEventListener('click', () => closeModal(linkedinModal));
-    linkedinModal.addEventListener('click', (e) => {
-      if (e.target === linkedinModal) closeModal(linkedinModal);
-    });
-  }
-
   // Resume Modal
   const resumeBtn = document.getElementById('view-resume-btn');
   const resumeModal = document.getElementById('resume-modal');
@@ -323,7 +308,6 @@ function initModals() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (modalOverlay && modalOverlay.classList.contains('active')) closeModal(modalOverlay);
-      if (linkedinModal && linkedinModal.classList.contains('active')) closeModal(linkedinModal);
       if (resumeModal && resumeModal.classList.contains('active')) closeModal(resumeModal);
     }
   });
