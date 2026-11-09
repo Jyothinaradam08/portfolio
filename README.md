@@ -44,7 +44,3 @@ Portfolio/
 └── README.md               # Complete setup, deployment & LinkedIn integration guide
 ```
 
----
-
-ng ones by editing the `projects` array.
-- Add or modify skills in the `skills.categories` array.
