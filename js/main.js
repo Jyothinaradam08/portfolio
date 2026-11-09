@@ -536,7 +536,7 @@ function initContactForm() {
     const message = document.getElementById('contact-message').value.trim();
 
     const mailtoSubject = encodeURIComponent(subject || `Inquiry from ${name} via Portfolio`);
-    const mailtoBody = encodeURIComponent(`Hi Jyothi,\n\n${message}\n\nFrom: ${name} (${senderEmail})`);
+    const mailtoBody = encodeURIComponent(`Hi Jyothi Lakshmi Naradam,\n\n${message}\n\nFrom: ${name} (${senderEmail})`);
 
     showToast("Opening your email client to send message...");
     
@@ -596,3 +596,4 @@ function initMobileMenu() {
     });
   }
 }
+
