@@ -437,8 +437,8 @@
         </div>
       </div>
 
-      <!-- Projects Grid -->
-      <div id="projects-grid" class="grid grid-cols-1 lg:grid-cols-3 gap-7">
+      <!-- Projects Grid (Clean 2x2 on desktop for 4 projects) -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-7">
         <!-- Rendered dynamically by main.js from PORTFOLIO_DATA.projects -->
       </div>
 
@@ -764,6 +764,18 @@
                 <li>Developed a full-stack misinformation detection platform supporting English, Hindi, and Telugu across text, audio, and video inputs, generating REAL/FAKE verdicts with confidence scores.</li>
                 <li>Built a multimodal processing pipeline using FFmpeg and OpenAI Whisper for audio/video transcription, with language-specific TF-IDF + Logistic Regression classifiers served through Python Flask.</li>
                 <li>Implemented explainable predictions with class probabilities, confidence levels, influential terms, transcript viewing, analysis history, and model performance insights.</li>
+              </ul>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-slate-900">Full-Stack Real-Time Currency Converter Web Application</span>
+                <span class="text-xs font-mono text-sky-700 font-semibold">React.js, Node.js, Express, REST API</span>
+              </div>
+              <ul class="list-disc list-inside text-slate-600 space-y-1 mt-1 text-xs">
+                <li>Built a responsive full-stack currency exchange platform integrating real-time foreign exchange REST APIs across 150+ world currencies.</li>
+                <li>Engineered instant bidirectional conversion, one-click currency swapping, and quick currency search with reactive state management.</li>
+                <li>Implemented Node.js/Express backend service with intelligent exchange rate caching to optimize latency and prevent external API quota exhaustion.</li>
               </ul>
             </div>
 

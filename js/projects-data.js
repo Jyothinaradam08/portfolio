@@ -16,7 +16,7 @@ const PORTFOLIO_DATA = {
     stats: [
       { label: "M.Tech CGPA", value: "8.87", suffix: "/10", sub: "NIT Raipur" },
       { label: "B.Tech CGPA", value: "8.60", suffix: "/10", sub: "JNTUA College of Eng." },
-      { label: "Core Projects", value: "3+", suffix: "", sub: "Multimodal AI & Full-Stack" },
+      { label: "Core Projects", value: "4+", suffix: "", sub: "AI, ML & Full-Stack" },
       { label: "Multilingual Pipeline", value: "3", suffix: " Langs", sub: "English, Hindi, Telugu" }
     ]
   },
@@ -190,6 +190,40 @@ const PORTFOLIO_DATA = {
         "Responsive Design: CSS Flexbox/Grid layouts providing fluid experience across smartphones, tablets, and wide monitors."
       ],
       codeUrl: "https://github.com/Jyothinaradam08",
+      liveUrl: null
+    },
+    {
+      id: "currency-converter",
+      title: "Full-Stack Real-Time Currency Converter Web Application",
+      shortTitle: "Full-Stack Currency Converter",
+      category: "web-dev",
+      featured: true,
+      badge: "Full-Stack & FinTech",
+      accentColor: "#0284c7",
+      icon: "dollar-sign",
+      shortDesc: "Interactive full-stack web application delivering instant real-time currency conversions, multi-currency comparisons, and cached exchange rate data across 150+ world currencies.",
+      technologies: ["React.js", "Node.js", "Express.js", "RESTful APIs", "JavaScript (ES6+)", "Exchange Rate API", "Modern CSS"],
+      highlights: [
+        "Built a full-stack currency exchange platform integrating real-time third-party foreign exchange (Forex) REST APIs.",
+        "Engineered responsive interactive UI featuring instantaneous bidirectional conversion, one-click currency swapping, and quick currency search across 150+ world currencies.",
+        "Implemented backend API layer in Node.js/Express with intelligent in-memory rate caching to avoid rate-limiting and accelerate conversion response times.",
+        "Designed resilient error handling and offline fallback mechanisms to gracefully handle API downtime and connectivity interruptions.",
+        "Delivered dynamic conversion history tracking and multi-currency comparison cards for streamlined cross-currency analysis."
+      ],
+      metrics: [
+        { label: "Supported Currencies", val: "150+ World Fiat" },
+        { label: "Rate Engine", val: "Real-Time REST API" },
+        { label: "Optimization", val: "Cached Fast Latency" },
+        { label: "Architecture", val: "Full-Stack Client-Server" }
+      ],
+      architecture: [
+        "Frontend Client: Dynamic React interface with real-time input debounce, currency flag integration, quick swap mechanism, and responsive layouts.",
+        "Backend REST Service: Node.js/Express API acting as an intermediary proxy between client requests and foreign exchange provider APIs.",
+        "Rate Caching Engine: Server-side cache storing hourly exchange rates to reduce latency and conserve external API call quotas.",
+        "Resilience & Validation: Strict input sanitization, numeric validation, and fallback rate storage in case of network outages.",
+        "Cross-Currency Calculations: Optimized matrix mathematics for converting any base currency to target currencies seamlessly."
+      ],
+      codeUrl: "https://github.com/Jyothinaradam08/fullstack-currency-converter",
       liveUrl: null
     }
   ],

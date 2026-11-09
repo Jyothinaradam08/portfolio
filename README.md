@@ -17,6 +17,7 @@ A high-performance, modern, and fully responsive developer portfolio built for *
   1. **VeriSense AI**: AI-Powered Multilingual Multimodal Misinformation Detection Platform (English, Hindi, Telugu via OpenAI Whisper, FFmpeg, Python Flask, React.js, Scikit-learn).
   2. **AI Powered Resume Screening & Recommendation System**: NLP parsing, candidate evaluation scoring across 10+ job roles, MySQL analytics, Excel/PDF export.
   3. **Spotify-Based Music Streaming Web App**: OAuth 2.0 authentication, real-time Spotify Web API playback, state management.
+  4. **Full-Stack Currency Converter Web App**: Real-time foreign exchange conversions supporting 150+ fiat currencies with Node.js/Express rate caching and responsive React UI ([GitHub Repo](https://github.com/Jyothinaradam08/fullstack-currency-converter)).
 - **Interactive Capabilities**:
   - ⌨️ Dynamic typing hero animation in sky blue
   - 🔍 Filterable projects (All / AI & Machine Learning / Full-Stack Web)
