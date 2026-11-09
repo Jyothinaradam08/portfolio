@@ -69,25 +69,10 @@ Portfolio/
 
 ---
 
-## 🌐 Netlify Subdomain Customization
+## 🌐 Live Deployment
 
-To rename your Netlify subdomain to **`jyothilakshminaradam.netlify.app`**:
-
-1. Log in to your [Netlify Dashboard](https://app.netlify.com/).
-2. Select your site (**`lambent-sunshine-797e41`**).
-3. Go to **Site configuration** > **Site details** (or **Domain management**).
-4. Click **Options** (or **Change site name**).
-5. Enter:
-   ```text
-   jyothilakshminaradam
-   ```
-6. Click **Save**.
-7. If `jyothilakshminaradam` is taken, recommended alternatives:
-   - `jyothi-lakshmi-naradam`
-   - `jyothinaradam`
-   - `jyothi-naradam`
-
-Your website will be live at: **`https://jyothilakshminaradam.netlify.app/`**
+Your portfolio is deployed and live at:
+👉 **`https://lambent-sunshine-797e41.netlify.app/`**
 
 ---
 
@@ -97,7 +82,10 @@ Your website will be live at: **`https://jyothilakshminaradam.netlify.app/`**
 1. Go to your LinkedIn profile: **[naradam-jyothi-lakshmi](https://www.linkedin.com/in/naradam-jyothi-lakshmi/)**
 2. Click the **Edit (Pencil)** icon on your top introduction card.
 3. Scroll down to the bottom to **Custom link**.
-4. In **Link URL**, paste your live portfolio URL.
+4. In **Link URL**, paste your live portfolio URL:
+   ```text
+   https://lambent-sunshine-797e41.netlify.app/
+   ```
 5. In **Link text**, paste:
    ```text
    👉 View AI/ML & Full-Stack Portfolio (NIT Raipur)
