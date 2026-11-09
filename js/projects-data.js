@@ -9,8 +9,8 @@ const PORTFOLIO_DATA = {
     email: "jyopandu2361@gmail.com",
     phone: "+91 7036872361",
     location: "Raipur, India / Andhra Pradesh, India",
-    linkedin: "https://www.linkedin.com/in/jyothi-lakshmi-naradam",
-    github: "https://github.com/jyothinaradam",
+    linkedin: "https://www.linkedin.com/in/naradam-jyothi-lakshmi/",
+    github: "https://github.com/Jyothinaradam08",
     bio: "M.Tech Information Technology student at National Institute of Technology (NIT) Raipur with a strong foundation in Artificial Intelligence, Machine Learning, Data Analytics, and Full-Stack Web Development. Passionate about building intelligent, data-driven, and scalable systems that solve complex real-world challenges.",
     statusBadge: "Open to AI/ML & Software Engineering Roles (Internships / Full-Time)",
     stats: [
@@ -121,7 +121,7 @@ const PORTFOLIO_DATA = {
         "ML Engine: Python Flask microservice evaluating extracted text with specialized TF-IDF vectorizers and calibrated Logistic Regression classifiers.",
         "Explainable AI (XAI): Returns prediction probabilities, confidence metrics, and influential keyword weights."
       ],
-      codeUrl: "https://github.com/jyothinaradam",
+      codeUrl: "https://github.com/Jyothinaradam08",
       liveUrl: null
     },
     {
@@ -155,7 +155,7 @@ const PORTFOLIO_DATA = {
         "Analytics Dashboard: Streamlit interactive interface presenting score breakdowns, candidate leaderboards, and metric distributions.",
         "Data Storage: MySQL database schema tracking candidates, scores, timestamped evaluations, and batch statistics."
       ],
-      codeUrl: "https://github.com/jyothinaradam",
+      codeUrl: "https://github.com/Jyothinaradam08",
       liveUrl: null
     },
     {
@@ -189,7 +189,7 @@ const PORTFOLIO_DATA = {
         "State Management: Global state tracking active track, playback status, playback queue, and user context.",
         "Responsive Design: CSS Flexbox/Grid layouts providing fluid experience across smartphones, tablets, and wide monitors."
       ],
-      codeUrl: "https://github.com/jyothinaradam",
+      codeUrl: "https://github.com/Jyothinaradam08",
       liveUrl: null
     }
   ],
@@ -229,7 +229,7 @@ const PORTFOLIO_DATA = {
     email: "jyopandu2361@gmail.com",
     phone: "+91 7036872361",
     location: "Raipur, Chhattisgarh & Andhra Pradesh, India",
-    linkedin: "https://www.linkedin.com/in/jyothi-lakshmi-naradam",
-    github: "https://github.com/jyothinaradam"
+    linkedin: "https://www.linkedin.com/in/naradam-jyothi-lakshmi/",
+    github: "https://github.com/Jyothinaradam08"
   }
 };

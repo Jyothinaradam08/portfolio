@@ -57,23 +57,21 @@ Portfolio/
 
 ### Option A: GitHub Pages (Recommended — Permanent & Free)
 
-1. Create a free account or sign in to [GitHub](https://github.com/).
-2. Click **New Repository** and name it `portfolio` (or `<your-username>.github.io`).
-3. In this folder (`c:\Jyo\Project\Portfolio`), run in PowerShell / Terminal:
+1. Sign in to your GitHub account: **[Jyothinaradam08](https://github.com/Jyothinaradam08)**.
+2. Click **New Repository** and name it `portfolio` (or `Jyothinaradam08.github.io`).
+3. Set the repository to **Public** and leave "Initialize this repository with a README" unchecked.
+4. In this folder (`c:\Jyo\Project\Portfolio`), run in PowerShell:
    ```bash
-   git init
-   git add .
-   git commit -m "Launch Jyothi Lakshmi Naradam Portfolio"
+   git remote add origin https://github.com/Jyothinaradam08/portfolio.git
    git branch -M main
-   git remote add origin https://github.com/<YOUR-GITHUB-USERNAME>/portfolio.git
    git push -u origin main
    ```
-4. On your GitHub repository page:
+5. On your GitHub repository page:
    - Go to **Settings** > **Pages** (on the left sidebar).
    - Under **Build and deployment** > **Branch**, select `main` and `/(root)`.
    - Click **Save**.
-5. Within 1–2 minutes, your website is live at:
-   `https://<YOUR-GITHUB-USERNAME>.github.io/portfolio/`
+6. Within 1–2 minutes, your website is live at:
+   `https://jyothinaradam08.github.io/portfolio/`
 
 ---
 
@@ -88,10 +86,10 @@ Portfolio/
 ## 💼 How to Add to Your LinkedIn Profile
 
 ### 1. Add as Custom Link in Profile Intro (Top of Profile)
-1. Go to your LinkedIn profile.
+1. Go to your LinkedIn profile: **[naradam-jyothi-lakshmi](https://www.linkedin.com/in/naradam-jyothi-lakshmi/)**
 2. Click the **Edit (Pencil)** icon on your top introduction card.
 3. Scroll down to the bottom to **Custom link**.
-4. In **Link URL**, paste your deployed portfolio URL (`https://<YOUR-GITHUB-USERNAME>.github.io/portfolio/`).
+4. In **Link URL**, paste your live portfolio URL (`https://jyothinaradam08.github.io/portfolio/`).
 5. In **Link text**, paste:
    ```text
    👉 View AI & Full-Stack Portfolio (NIT Raipur)
