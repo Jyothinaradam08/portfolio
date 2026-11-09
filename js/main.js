@@ -1,10 +1,12 @@
 // Main Interactive JavaScript for Jyothi Lakshmi Naradam's Portfolio
+// Career-Focused: AI/ML Engineer | ML Engineer | NLP Engineer | Deep Learning Engineer | Data Scientist | Full-Stack Developer
 // Professional Palette: Crisp White Background, Deep Slate & Sky Blue Accents
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initTypewriter();
   renderStats();
+  renderThesis();
   renderResearchInterests();
   renderSkills();
   renderProjects();
@@ -56,7 +58,7 @@ function updateThemeIcon(theme, iconEl) {
 }
 
 /* ==========================================================================
-   2. Dynamic Typewriter in Hero
+   2. Dynamic Typewriter in Hero (Career-Targeted Roles)
    ========================================================================== */
 function initTypewriter() {
   const el = document.getElementById('typewriter-text');
@@ -64,9 +66,11 @@ function initTypewriter() {
 
   const words = [
     "AI/ML Engineer",
-    "NLP & Multimodal AI Specialist",
-    "Full-Stack Developer",
-    "M.Tech Scholar @ NIT Raipur (8.87 CGPA)"
+    "Machine Learning Engineer",
+    "NLP Engineer",
+    "Deep Learning Engineer",
+    "Data Scientist",
+    "Software Engineer / Full-Stack Developer"
   ];
 
   let wordIndex = 0;
@@ -112,7 +116,7 @@ function renderStats() {
   if (!container || !PORTFOLIO_DATA.personal.stats) return;
 
   container.innerHTML = PORTFOLIO_DATA.personal.stats.map(stat => `
-    <div class="glass-card p-5 rounded-2xl text-center border border-slate-200/90 hover:border-sky-400 transition">
+    <div class="glass-card p-5 rounded-2xl text-center border border-slate-200/90 hover:border-sky-400 transition bg-white shadow-sm">
       <div class="text-2xl sm:text-3xl font-extrabold text-gradient mb-0.5">
         ${stat.value}<span class="text-xs sm:text-sm font-semibold opacity-85 text-sky-600">${stat.suffix}</span>
       </div>
@@ -123,7 +127,102 @@ function renderStats() {
 }
 
 /* ==========================================================================
-   4. Research & Interests Section Rendering
+   4. M.Tech Thesis & Research Rendering
+   ========================================================================== */
+function renderThesis() {
+  const container = document.getElementById('thesis-content-container');
+  if (!container || !PORTFOLIO_DATA.thesis) return;
+
+  const t = PORTFOLIO_DATA.thesis;
+
+  container.innerHTML = `
+    <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-200 bg-white shadow-md relative overflow-hidden">
+      
+      <!-- Top Thesis Header & Academic Badges -->
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+        <div>
+          <div class="flex flex-wrap items-center gap-2.5 mb-2.5">
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full bg-sky-50 text-sky-800 border border-sky-200">
+              <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+              ${t.badge}
+            </span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+              ${t.status}
+            </span>
+          </div>
+
+          <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 font-heading leading-tight">
+            ${t.title}
+          </h3>
+        </div>
+
+        <div class="flex-shrink-0">
+          <div class="px-4 py-2.5 rounded-xl bg-sky-50/80 border border-sky-100 text-xs">
+            <span class="block text-slate-500 font-medium">Benchmark Dataset:</span>
+            <span class="font-bold text-slate-900">${t.dataset}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Thesis Content Grid: Diagram & Technical Breakdown -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 items-center">
+        
+        <!-- Architectural SVG Diagram Preview -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-900 shadow-sm">
+            <img src="${t.image}" alt="GPF-HCT Architecture Diagram" class="w-full h-auto object-cover" loading="lazy">
+          </div>
+          
+          <!-- Manuscript Note Alert -->
+          <div class="p-3.5 rounded-xl bg-sky-50/70 border border-sky-200 text-xs text-slate-700 flex items-start gap-2.5">
+            <svg class="w-4 h-4 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            <div>
+              <strong class="font-semibold text-slate-900">Manuscript Status:</strong>
+              <span>${t.manuscriptNote}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Summary & Key Contributions -->
+        <div class="lg:col-span-6 space-y-5">
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            ${t.summary}
+          </p>
+
+          <div class="space-y-3">
+            <h4 class="text-xs font-bold text-sky-700 uppercase tracking-wider">Methodology & Architectural Innovations</h4>
+            <div class="grid grid-cols-1 gap-2.5 max-h-72 overflow-y-auto pr-1">
+              ${t.highlights.map(h => `
+                <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                  <span class="text-xs font-bold text-slate-900 block">${h.title}</span>
+                  <span class="text-xs text-slate-600 leading-relaxed block mt-0.5">${h.desc}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Technologies Pill Row -->
+          <div class="pt-2">
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-2">Research Technologies & Frameworks</span>
+            <div class="flex flex-wrap gap-1.5">
+              ${t.technologies.map(tech => `
+                <span class="text-[11px] px-2.5 py-1 rounded-full bg-sky-50 text-sky-800 border border-sky-200 font-medium">
+                  ${tech}
+                </span>
+              `).join('')}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  `;
+}
+
+/* ==========================================================================
+   5. Research & Interests Section Rendering
    ========================================================================== */
 function renderResearchInterests() {
   const container = document.getElementById('research-interests-grid');
@@ -156,7 +255,7 @@ function renderResearchInterests() {
 }
 
 /* ==========================================================================
-   5. Skills Matrix Rendering (7 Categorized Sections, No Fake Progress Bars)
+   6. Skills Matrix Rendering (7 Categorized Sections, No Fake Progress Bars)
    ========================================================================== */
 function renderSkills() {
   const container = document.getElementById('skills-grid');
@@ -199,7 +298,7 @@ function renderSkills() {
 }
 
 /* ==========================================================================
-   6. Projects Rendering & Filter Logic (With Visual Thumbnails)
+   7. Projects Rendering & Filter Logic (With Career-Focused Role Alignment)
    ========================================================================== */
 let activeCategory = 'all';
 
@@ -221,13 +320,20 @@ function renderProjects() {
 
       <!-- Card Header with Badges -->
       <div class="project-header">
-        <div class="flex items-center justify-between gap-2 mb-2.5">
+        <div class="flex items-center justify-between gap-2 mb-2">
           <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200">
             <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
             ${proj.badge}
           </span>
           <span class="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">
             ${proj.category === 'ai-ml' ? 'AI / ML' : 'Full-Stack'}
+          </span>
+        </div>
+
+        <!-- Target Role Alignment Pill -->
+        <div class="mb-2.5">
+          <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
+            Target Roles: ${proj.targetRolePill}
           </span>
         </div>
 
@@ -319,7 +425,7 @@ function initFilterButtons() {
 }
 
 /* ==========================================================================
-   7. Project Modal Controller
+   8. Project Modal Controller
    ========================================================================== */
 function initModals() {
   const modalOverlay = document.getElementById('project-modal');
@@ -480,7 +586,7 @@ window.openProjectModal = function(projectId) {
 };
 
 /* ==========================================================================
-   8. Quick Copy Utilities & Toast Feedback (Email Only, No Phone)
+   9. Quick Copy Utilities & Toast Feedback (Email Only, No Phone)
    ========================================================================== */
 function initCopyButtons() {
   const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
@@ -522,7 +628,7 @@ function showToast(message) {
 }
 
 /* ==========================================================================
-   9. Contact Form Handling
+   10. Contact Form Handling
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('contact-form');
@@ -547,7 +653,7 @@ function initContactForm() {
 }
 
 /* ==========================================================================
-   10. Active Scroll Spy
+   11. Active Scroll Spy
    ========================================================================== */
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
@@ -577,7 +683,7 @@ function initScrollSpy() {
 }
 
 /* ==========================================================================
-   11. Mobile Menu Handling
+   12. Mobile Menu Handling
    ========================================================================== */
 function initMobileMenu() {
   const toggleBtn = document.getElementById('mobile-menu-toggle');
@@ -596,4 +702,3 @@ function initMobileMenu() {
     });
   }
 }
-
