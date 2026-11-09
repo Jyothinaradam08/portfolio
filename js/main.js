@@ -1,5 +1,5 @@
 // Main Interactive JavaScript for Jyothi Lakshmi Naradam's Portfolio
-// Classy Palette: Obsidian Black, Champagne Gold, Warm Bronze & Platinum
+// Professional Palette: Crisp White Background, Deep Slate & Sky Blue Accents
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
@@ -16,21 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. Theme Management (Dark / Light Mode)
+   1. Theme Management (Default: Light / Crisp White)
    ========================================================================== */
 function initTheme() {
   const themeToggleBtn = document.getElementById('theme-toggle');
   const themeIcon = document.getElementById('theme-icon');
   
-  // Check saved theme or default to dark
-  const savedTheme = localStorage.getItem('jyothi_portfolio_theme') || 'dark';
+  // Default to light (crisp white) or respect previous choice
+  const savedTheme = localStorage.getItem('jyothi_portfolio_theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme, themeIcon);
 
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('jyothi_portfolio_theme', newTheme);
       updateThemeIcon(newTheme, themeIcon);
@@ -41,15 +41,17 @@ function initTheme() {
 function updateThemeIcon(theme, iconEl) {
   if (!iconEl) return;
   if (theme === 'light') {
+    // Show moon icon so user can toggle to dark mode
     iconEl.innerHTML = `
-      <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
       </svg>
     `;
   } else {
+    // Show sun icon so user can toggle back to crisp white
     iconEl.innerHTML = `
-      <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+      <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
       </svg>
     `;
   }
@@ -67,13 +69,13 @@ function initTypewriter() {
     "M.Tech Scholar @ NIT Raipur (8.87 CGPA)",
     "Multimodal AI & NLP Specialist",
     "Full-Stack Web Developer",
-    "Intelligent Systems Builder"
+    "Data-Driven Systems Builder"
   ];
 
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
-  const typingSpeed = 75;
+  const typingSpeed = 70;
   const deletingSpeed = 40;
   const pauseEnd = 1600;
 
@@ -113,12 +115,12 @@ function renderStats() {
   if (!container || !PORTFOLIO_DATA.personal.stats) return;
 
   container.innerHTML = PORTFOLIO_DATA.personal.stats.map(stat => `
-    <div class="glass-card p-4 rounded-xl text-center border border-amber-500/10 hover:border-amber-500/40 transition">
+    <div class="glass-card p-5 rounded-2xl text-center border border-slate-200/90 hover:border-sky-400 transition">
       <div class="text-2xl sm:text-3xl font-extrabold text-gradient mb-0.5">
-        ${stat.value}<span class="text-xs sm:text-sm font-semibold opacity-80">${stat.suffix}</span>
+        ${stat.value}<span class="text-xs sm:text-sm font-semibold opacity-85 text-sky-600">${stat.suffix}</span>
       </div>
-      <div class="text-xs font-bold text-slate-300 tracking-wide uppercase">${stat.label}</div>
-      <div class="text-[11px] text-slate-400 mt-0.5">${stat.sub}</div>
+      <div class="text-xs font-bold text-slate-800 tracking-wide uppercase">${stat.label}</div>
+      <div class="text-[11px] text-slate-500 mt-0.5 font-medium">${stat.sub}</div>
     </div>
   `).join('');
 }
@@ -131,31 +133,31 @@ function renderSkills() {
   if (!container || !PORTFOLIO_DATA.skills.categories) return;
 
   const iconSvgMap = {
-    brain: `<svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`,
-    layout: `<svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>`,
-    code: `<svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>`,
-    terminal: `<svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>`
+    brain: `<svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`,
+    layout: `<svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>`,
+    code: `<svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>`,
+    terminal: `<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>`
   };
 
   container.innerHTML = PORTFOLIO_DATA.skills.categories.map(category => `
     <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
       <div>
         <div class="flex items-center gap-3.5 mb-4">
-          <div class="p-2.5 rounded-xl bg-stone-900/90 border border-amber-500/20">
+          <div class="p-2.5 rounded-xl bg-sky-50 border border-sky-100">
             ${iconSvgMap[category.icon] || iconSvgMap['code']}
           </div>
           <div>
-            <h3 class="text-lg font-bold text-slate-100">${category.name}</h3>
-            <p class="text-xs text-slate-400 mt-0.5">${category.description}</p>
+            <h3 class="text-lg font-bold text-slate-900">${category.name}</h3>
+            <p class="text-xs text-slate-500 mt-0.5">${category.description}</p>
           </div>
         </div>
 
         <div class="flex flex-wrap gap-2 pt-2">
           ${category.skills.map(sk => `
             <div class="tech-pill group cursor-default" title="${sk.badge} • ${sk.level}">
-              <span class="w-1.5 h-1.5 rounded-full bg-amber-400 group-hover:scale-125 transition-transform"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-sky-500 group-hover:scale-125 transition-transform"></span>
               <span class="font-medium">${sk.name}</span>
-              <span class="text-[10px] opacity-75 px-1 py-0.2 rounded bg-amber-500/10 border border-amber-500/20 text-amber-200/90">${sk.badge}</span>
+              <span class="text-[10px] opacity-80 px-1 py-0.2 rounded bg-sky-100 border border-sky-200 text-sky-800">${sk.badge}</span>
             </div>
           `).join('')}
         </div>
@@ -183,20 +185,20 @@ function renderProjects() {
       <!-- Card Header with Badges -->
       <div class="project-header">
         <div class="flex items-center justify-between gap-2 mb-3">
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/25">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
             ${proj.badge}
           </span>
-          <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">
+          <span class="text-[11px] font-mono text-slate-500 uppercase tracking-wider font-semibold">
             ${proj.category === 'ai-ml' ? 'AI / ML' : 'Web & APIs'}
           </span>
         </div>
 
-        <h3 class="text-xl font-bold text-slate-100 group-hover:text-amber-300 transition-colors leading-snug">
+        <h3 class="text-xl font-bold text-slate-900 group-hover:text-sky-600 transition-colors leading-snug">
           ${proj.title}
         </h3>
         
-        <p class="text-sm text-slate-300 mt-2.5 line-clamp-3 leading-relaxed">
+        <p class="text-sm text-slate-600 mt-2.5 line-clamp-3 leading-relaxed">
           ${proj.shortDesc}
         </p>
       </div>
@@ -206,17 +208,17 @@ function renderProjects() {
         <div class="space-y-3">
           <div class="grid grid-cols-2 gap-2 text-xs">
             ${proj.metrics.slice(0, 2).map(m => `
-              <div class="p-2.5 rounded-lg bg-stone-900/60 border border-amber-500/15">
-                <span class="text-amber-300/80 block text-[10px] uppercase font-bold tracking-wider">${m.label}</span>
-                <span class="text-slate-200 font-semibold text-xs mt-0.5 block">${m.val}</span>
+              <div class="p-2.5 rounded-lg bg-sky-50/60 border border-sky-100">
+                <span class="text-sky-700 block text-[10px] uppercase font-bold tracking-wider">${m.label}</span>
+                <span class="text-slate-800 font-bold text-xs mt-0.5 block">${m.val}</span>
               </div>
             `).join('')}
           </div>
 
-          <ul class="space-y-1.5 text-xs text-slate-300">
+          <ul class="space-y-1.5 text-xs text-slate-600">
             ${proj.highlights.slice(0, 3).map(h => `
               <li class="flex items-start gap-2">
-                <svg class="w-3.5 h-3.5 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span>${h}</span>
@@ -226,15 +228,15 @@ function renderProjects() {
         </div>
 
         <!-- Tech Stack Pills -->
-        <div class="mt-5 pt-4 border-t border-slate-800/80">
+        <div class="mt-5 pt-4 border-t border-slate-100">
           <div class="flex flex-wrap gap-1.5 mb-5">
             ${proj.technologies.slice(0, 6).map(t => `
-              <span class="text-[11px] px-2 py-0.5 rounded bg-stone-900/80 text-amber-100/90 border border-amber-500/20 font-medium">
+              <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200 font-medium">
                 ${t}
               </span>
             `).join('')}
             ${proj.technologies.length > 6 ? `
-              <span class="text-[11px] px-2 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/40 font-medium">
+              <span class="text-[11px] px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200 font-semibold">
                 +${proj.technologies.length - 6} more
               </span>
             ` : ''}
@@ -242,13 +244,13 @@ function renderProjects() {
 
           <!-- Action Buttons -->
           <div class="flex items-center gap-3">
-            <button onclick="openProjectModal('${proj.id}')" class="flex-1 btn-gold inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs tracking-wide transition">
+            <button onclick="openProjectModal('${proj.id}')" class="flex-1 btn-skyblue inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs tracking-wide transition">
               <span>Deep Dive Architecture</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
-            <a href="${proj.codeUrl}" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-stone-900/90 hover:bg-stone-800 text-amber-300 hover:text-white border border-amber-500/20 transition" title="View Source Repository">
+            <a href="${proj.codeUrl}" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-slate-900 border border-slate-200 transition" title="View Source Repository">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
               </svg>
@@ -348,19 +350,19 @@ window.openProjectModal = function(projectId) {
 
   contentContainer.innerHTML = `
     <!-- Modal Header -->
-    <div class="p-6 sm:p-8 border-b border-amber-500/20">
+    <div class="p-6 sm:p-8 border-b border-slate-200">
       <div class="flex items-center gap-2 mb-2">
-        <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">
+        <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200">
           ${proj.badge}
         </span>
-        <span class="text-xs font-mono text-slate-400">
+        <span class="text-xs font-mono text-slate-500 font-medium">
           ${proj.category === 'ai-ml' ? 'Artificial Intelligence / ML' : 'Full-Stack Web Engineering'}
         </span>
       </div>
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
         ${proj.title}
       </h2>
-      <p class="text-sm sm:text-base text-slate-300 mt-2.5">
+      <p class="text-sm sm:text-base text-slate-600 mt-2.5 leading-relaxed">
         ${proj.shortDesc}
       </p>
     </div>
@@ -370,12 +372,12 @@ window.openProjectModal = function(projectId) {
       
       <!-- Key Metrics Row -->
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-3">Key Project Metrics & Specifications</h4>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-3">Key Project Metrics & Specifications</h4>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
           ${proj.metrics.map(m => `
-            <div class="p-3 rounded-xl bg-stone-900/60 border border-amber-500/20 text-center">
-              <span class="block text-[11px] font-medium text-amber-300/80 uppercase tracking-wider">${m.label}</span>
-              <span class="block text-sm font-bold text-slate-100 mt-1">${m.val}</span>
+            <div class="p-3 rounded-xl bg-sky-50/70 border border-sky-100 text-center">
+              <span class="block text-[11px] font-semibold text-sky-800 uppercase tracking-wider">${m.label}</span>
+              <span class="block text-sm font-bold text-slate-900 mt-1">${m.val}</span>
             </div>
           `).join('')}
         </div>
@@ -383,16 +385,16 @@ window.openProjectModal = function(projectId) {
 
       <!-- Architectural Breakdown -->
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-3">System Architecture & Engineering Highlights</h4>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-3">System Architecture & Engineering Highlights</h4>
         <div class="space-y-2.5">
           ${proj.architecture.map(step => `
-            <div class="p-3.5 rounded-xl bg-stone-900/50 border border-amber-500/15 flex items-start gap-3">
-              <div class="p-1.5 rounded-lg bg-amber-500/15 text-amber-400 mt-0.5">
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+              <div class="p-1.5 rounded-lg bg-sky-100 text-sky-700 mt-0.5">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${step}</p>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${step}</p>
             </div>
           `).join('')}
         </div>
@@ -400,11 +402,11 @@ window.openProjectModal = function(projectId) {
 
       <!-- Resume Verified Accomplishments -->
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-3">Delivered Features & Technical Implementation</h4>
-        <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-3">Delivered Features & Technical Implementation</h4>
+        <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
           ${proj.highlights.map(h => `
             <li class="flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
               <span>${h}</span>
@@ -415,11 +417,11 @@ window.openProjectModal = function(projectId) {
 
       <!-- Tech Stack Badges -->
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-2.5">Technologies Used</h4>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-2.5">Technologies Used</h4>
         <div class="flex flex-wrap gap-2">
           ${proj.technologies.map(t => `
             <span class="tech-pill">
-              <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
               ${t}
             </span>
           `).join('')}
@@ -427,13 +429,13 @@ window.openProjectModal = function(projectId) {
       </div>
 
       <!-- Modal Footer CTAs -->
-      <div class="pt-6 border-t border-amber-500/20 flex flex-wrap items-center justify-between gap-4">
-        <a href="${proj.codeUrl}" target="_blank" rel="noopener noreferrer" class="btn-gold inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs tracking-wide transition">
+      <div class="pt-6 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
+        <a href="${proj.codeUrl}" target="_blank" rel="noopener noreferrer" class="btn-skyblue inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs tracking-wide transition">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
           <span>View Source on GitHub</span>
         </a>
 
-        <button onclick="document.getElementById('project-modal').classList.remove('active'); document.body.style.overflow='';" class="text-xs font-semibold text-slate-400 hover:text-white px-4 py-2 transition">
+        <button onclick="document.getElementById('project-modal').classList.remove('active'); document.body.style.overflow='';" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-4 py-2 transition">
           Close Window
         </button>
       </div>
@@ -446,7 +448,7 @@ window.openProjectModal = function(projectId) {
 
 /* ==========================================================================
    7. Quick Copy Utilities & Toast Feedback
-   ========================================================================== */
+   ========================================================================= */
 function initCopyButtons() {
   const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
   const copyPhoneBtns = document.querySelectorAll('.copy-phone-btn');
@@ -477,12 +479,12 @@ function showToast(message) {
   if (!toast) {
     toast = document.createElement('div');
     toast.id = 'portfolio-toast';
-    toast.className = 'fixed bottom-6 right-6 z-50 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 text-stone-950 font-bold text-xs shadow-2xl border border-amber-300/40 flex items-center gap-2.5 transition-all transform duration-300 opacity-0 translate-y-4';
+    toast.className = 'fixed bottom-6 right-6 z-50 px-5 py-3 rounded-xl bg-sky-600 text-white font-semibold text-xs shadow-xl flex items-center gap-2.5 transition-all transform duration-300 opacity-0 translate-y-4';
     document.body.appendChild(toast);
   }
 
   toast.innerHTML = `
-    <svg class="w-4 h-4 text-stone-950 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
     </svg>
     <span>${message}</span>
